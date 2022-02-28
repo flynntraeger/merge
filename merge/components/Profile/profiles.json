@@ -1,0 +1,15 @@
+
+{
+    "flynn": {
+        "fname": "Flynn",
+        "uname": "YungTriggz",
+        "about": "Hi there, I'm Flynn",
+        "imgurl": ""
+    },
+    "ember": {
+        "fname": "Ember",
+        "uname": "Waffle",
+        "about": "Hi there, I'm Ember!",
+        "imgurl": ""
+    }
+}
