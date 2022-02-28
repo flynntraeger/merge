@@ -50,20 +50,47 @@ class UserProfile extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: "100%",
-        position: "absolute",
-        bottom: 0,
-        flexDirection: "row",
-        justifyContent: "space-between",
-        fontFamily: 'Manrope',
-        paddingHorizontal: 40,
-        paddingVertical: 25,
-        backgroundColor: '#1D1D1D'
+      width: "95%",
+      borderRadius: 10,
+      flexWrap: "wrap",
+      flexDirection:"row",
+      justifyContent: "space-between",
+      paddingHorizontal: 15,
+      paddingVertical: 15,
+      backgroundColor:'#353535',
+      fontFamily: 'Manrope',
+      color: "#FFFFFF"
     },
-    iconButton: {
-        backgroundColor: '#1D1D1D',
-        padding: 0,
+    rightCol: {
+        width: "85%",
+        flexDirection:"column",
+        paddingLeft:10
+    },
+    tinyLogo: {
+        width: "15%"
+    },
+    topRow: {
+        flexDirection:"row",
+        justifyContent:"space-between",
+        paddingBottom: 2
+    },
+    nameText: {
+        fontSize: 14,
+        color: "#FFFFFF",
+        fontWeight: "bold",
+        textAlign: 'left',
+    },
+    timestampText: {
+      fontSize: 12,
+      textAlign: 'right',
+      color: "#888888",
+    },
+    messageText: {
+        fontSize: 12,
+        color: "#FFFFFF",
+        fontWeight: "normal",
+        textAlign: 'left'
     }
-});
+  });
 
 export default UserProfile;
