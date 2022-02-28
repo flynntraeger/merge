@@ -1,15 +1,33 @@
 
 {
+    "user": {
+        "fname": "User",
+        "uname": "Codeword Pickle",
+        "about": "Hi there, I'm User",
+        "imgurl": "",
+        "messages_with": [
+            "YungTriggz",
+            "Waffle",
+            "TurtleDuck",
+            "Naftyy",
+            "KeeWee",
+            "Al_x_9",
+            "Dubway",
+            "ValoBalo"
+        ]
+    },
     "flynn": {
         "fname": "Flynn",
         "uname": "YungTriggz",
         "about": "Hi there, I'm Flynn",
-        "imgurl": ""
+        "imgurl": "",
+        "messages_with": ["not necessary"]
     },
     "ember": {
         "fname": "Ember",
         "uname": "Waffle",
         "about": "Hi there, I'm Ember!",
-        "imgurl": ""
+        "imgurl": "",
+        "messages_with": ["not necessary"]
     }
 }
