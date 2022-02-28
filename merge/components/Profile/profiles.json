@@ -5,23 +5,87 @@
         "uname": "Codeword Pickle",
         "about": "Hi there, I'm User",
         "imgurl": "",
-        "messages_with": [
-            "YungTriggz",
-            "Waffle",
-            "TurtleDuck",
-            "Naftyy",
-            "KeeWee",
-            "Al_x_9",
-            "Dubway",
-            "ValoBalo"
-        ]
+        "messages_with": [{
+            "YungTriggz":[{
+                "Me_19:48": "Hey!",
+                "YungTriggz_19:48": "Hi! How's it going?",
+                "Me_19:49": "Good! Wanna play later?",
+                "YungTriggz_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "YungTriggz_19:50": "Sounds good",
+                "YungTriggz_19:51": "Set it up?"
+            }],
+            "Waffle":[{
+                "Me_19:48": "Hey!",
+                "Waffle_19:48": "Hi! How's it going?",
+                "Me_19:49": "Good! Wanna play later?",
+                "Waffle_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "Waffle_19:50": "Sounds good",
+                "Waffle_19:51": "Set it up?"
+            }],
+            "TurtleDuck":[{
+                "Me_19:48": "Hey!",
+                "TurtleDuck_19:48": "Hi! How's it going?",
+                "Me_19:49": "Good! Wanna play later?",
+                "TurtleDuck_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "TurtleDuck_19:50": "Sounds good",
+                "TurtleDuck_19:51": "Set it up?"
+            }],
+            "Naftyy":[{
+                "Me_19:48": "Hey!",
+                "Naftyy_19:48": "Hi! How's it going?",
+                "Me": "Good! Wanna play later?",
+                "Naftyy_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "Naftyy_19:50": "Sounds good",
+                "Naftyy_19:51": "Set it up?"
+            }],
+            "KeeWee":[{
+                "Me_19:48": "Hey!",
+                "KeeWee_19:48": "Hi! How's it going?",
+                "Me": "Good! Wanna play later?",
+                "KeeWee_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "KeeWee_19:50": "Sounds good",
+                "KeeWee_19:51": "Set it up?"
+            }],
+            "Al3x9":[{
+                "Me_19:48": "Hey!",
+                "Al3x9_19:48": "Hi! How's it going?",
+                "Me": "Good! Wanna play later?",
+                "Al3x9_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "Al3x9_19:50": "Sounds good",
+                "Al3x9_19:51": "Set it up?"
+            }],
+            "Dubway":[{
+                "Me_19:48": "Hey!",
+                "YungTriggz_19:48": "Hi! How's it going?",
+                "Me": "Good! Wanna play later?",
+                "Dubway_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "Dubway_19:50": "Sounds good",
+                "Dubway_19:51": "Set it up?"
+            }],
+            "ValoBalo":[{
+                "Me_19:48": "Hey!",
+                "ValoBalo_19:48": "Hi! How's it going?",
+                "Me": "Good! Wanna play later?",
+                "ValoBalo_19:49": "Yea sure, what you thinking?",
+                "Me_19:50": "Val?",
+                "ValoBalo_19:50": "Sounds good",
+                "ValoBalo_19:51": "Set it up?"
+            }]
+        }]
     },
     "flynn": {
         "fname": "Flynn",
         "uname": "YungTriggz",
         "about": "Hi there, I'm Flynn",
         "imgurl": "",
-        "messages_with": ["not necessary"]
+        "messages_with": ["user"]
     },
     "ember": {
         "fname": "Ember",
