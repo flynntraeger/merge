@@ -16,6 +16,7 @@ export default function NavBar() {
             <Button 
                 icon={<Bell stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
+                onPress={()=>navigation.navigate("Notif Screen")}
             />
             <Button 
                 icon={<Mail stroke="white" width={26} height={26} />}

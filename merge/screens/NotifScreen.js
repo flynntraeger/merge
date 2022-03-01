@@ -5,12 +5,12 @@ import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
 
-export default function HomeScreen({ route, navigation}) {
+export default function NotifScreen({ route, navigation}) {
     const params = route.params;
-	//home screen code blah blah
+	//notif screen code blah blah
     return (
         <View style={styles.container}>
-            <Text> Testing Home Screen </Text>
+            <Text> Testing Notif Screen </Text>
         </View>
     );
 }
