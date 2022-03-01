@@ -9,9 +9,8 @@ class TopBar extends React.Component {
     super(props);
   }
 
-  const navigation = useNavigation();
-
   render() {
+    const navigation = useNavigation();
     return (
         <View style={styles.container}>
             <Button 
