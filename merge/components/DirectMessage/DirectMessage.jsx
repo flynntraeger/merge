@@ -10,7 +10,7 @@ class DirectMessage extends React.Component {
   render() {
     return (
         <View style={styles.container}>
-            <View>
+            <View style={styles.leftCol}>
                 <Avatar 
                     size={50}
                     rounded
@@ -36,20 +36,19 @@ const styles = StyleSheet.create({
       borderRadius: 10,
       flexWrap: "wrap",
       flexDirection:"row",
-      justifyContent: "space-between",
-      paddingHorizontal: 15,
-      paddingVertical: 15,
+      justifyContent: "flex-start",
+      padding: 15,
       backgroundColor:'#353535',
-      fontFamily: 'Manrope',
-      color: "#FFFFFF"
+      fontFamily: 'Manrope'
+    },
+    leftCol: {
+      flexDirection:"row",
+      justifyContent:"flex-start"
     },
     rightCol: {
-        width: "85%",
-        flexDirection:"column",
-        paddingLeft:10
-    },
-    tinyLogo: {
-        width: "15%"
+      flex:1,
+      flexDirection:"column",
+      paddingLeft:10
     },
     topRow: {
         flexDirection:"row",
@@ -63,14 +62,14 @@ const styles = StyleSheet.create({
         textAlign: 'left',
     },
     timestampText: {
-      fontSize: 12,
+      fontSize: 11,
       textAlign: 'right',
       color: "#888888",
     },
     messageText: {
-        fontSize: 12,
-        color: "#FFFFFF",
-        fontWeight: "normal",
+        fontSize: 13,
+        color: "#DDDDDD",
+        fontWeight: "100",
         textAlign: 'left'
     }
   });
