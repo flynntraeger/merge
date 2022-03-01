@@ -4,12 +4,7 @@ import { Home, Bell, Mail, Calendar, User } from "react-native-feather";
 import { Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 
-class TopBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
+export default function NavBar() {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
@@ -36,9 +31,7 @@ class TopBar extends React.Component {
             />
         </View>
     );
-  }
 }
-
 
 const styles = StyleSheet.create({
     container: {
@@ -57,5 +50,3 @@ const styles = StyleSheet.create({
       padding: 0,
     }
   });
-
-export default TopBar;

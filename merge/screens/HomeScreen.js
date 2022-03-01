@@ -11,8 +11,17 @@ export default function HomeScreen({ route, navigation}) {
     const params = route.params;
 	//home screen code blah blah
     return (
-        <View>
+        <View style={styles.container}>
             <Text> Testing Home Screen </Text>
+            <NavBar />
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+});
