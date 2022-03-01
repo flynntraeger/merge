@@ -21,14 +21,17 @@ export default function NavBar() {
             <Button 
                 icon={<Mail stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
+                onPress={()=>navigation.navigate("DMs Screen")}
             />
             <Button 
                 icon={<Calendar stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
+                onPress={()=>navigation.navigate("Events Screen")}
             />
             <Button 
                 icon={<User stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
+                onPress={()=>navigation.navigate("Profile Screen")}
             />
         </View>
     );
