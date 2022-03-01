@@ -8,9 +8,11 @@ import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
 
 export default function HomeScreen({ route, navigation}) {
-	const params = route.params;
+    const params = route.params;
 	//home screen code blah blah
-	<View>
-		<Text> Testing Home Screen </Text>
-	</View>
+    return (
+        <View>
+            <Text> Testing Home Screen </Text>
+        </View>
+    );
 }
