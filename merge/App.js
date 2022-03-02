@@ -15,7 +15,6 @@ const Stack = createStackNavigator();
 export default function App() {
     return (
         <NavigationContainer>
-            <TopBar />
             <Stack.Navigator>
                 <Stack.Screen name="Home Screen" component={HomeScreen} options={{headerShown: false}}/>
                 <Stack.Screen name="Notif Screen" component={NotifScreen} options={{headerShown: false}}/>

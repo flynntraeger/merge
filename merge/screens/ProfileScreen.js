@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import TopBar from '../components/TopBar/TopBar';
 import DirectMessage from '../components/DirectMessage/DirectMessage';
 import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
