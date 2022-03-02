@@ -11,6 +11,7 @@ export default function ProfileScreen({ route, navigation}) {
 	//notif screen code blah blah
     return (
         <View style={styles.container}>
+            <TopBar title="My Profile" desc="Look at all these chickens"/>
             <Text> Testing Profile Screen </Text>
         </View>
     );
