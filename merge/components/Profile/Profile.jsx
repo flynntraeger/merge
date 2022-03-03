@@ -20,14 +20,7 @@ class UserProfile extends React.Component {
         }
     };
 
-    finishedLoading() {
-        this.setState({ loading: false })
-    }
-
     render() { // testing with profiles.flynn but need to generalise by passing in props
-        if (this.state.loading) {
-            <Text> Loading </Text>
-        }
         return (
             <View style={styles.container}>
                 <Image

@@ -4,7 +4,7 @@
         "fname": "User",
         "uname": "Codeword Pickle",
         "about": "Hi there, I'm User",
-        "imgurl": "",
+        "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
         "messages_with": [{
             "YungTriggz":[
                 2,
