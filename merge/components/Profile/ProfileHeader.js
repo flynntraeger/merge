@@ -10,7 +10,7 @@ export default function ProfileHeader() {
                 <Avatar 
                     style={styles.profilePic}
                     source={{uri: "https://i.imgur.com/FaB0CFp.png"}} 
-                    //this.props.picURL; fix this hardcoded image later
+                    //this.props.picURL; fix the hardcoded images later
                 />
             </ ImageBackground>
         </View>
@@ -22,10 +22,6 @@ const styles = StyleSheet.create({
       width: "100%",
       position: "absolute",
       top: 0
-    },
-    iconButton: {
-      backgroundColor:'#1D1D1D',
-      padding: 0,
     },
     profilePic: {
         width: 120,
