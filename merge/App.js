@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 export default function App() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator screenOptions={{ animationEnabled: false }}>
                 <Stack.Screen name="Home Screen" component={HomeScreen} options={{headerShown: false}}/>
                 <Stack.Screen name="Notif Screen" component={NotifScreen} options={{headerShown: false}}/>
                 <Stack.Screen name="DMs Screen" component={DMsScreen} options={{headerShown: false}}/>
