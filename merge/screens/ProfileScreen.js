@@ -5,6 +5,7 @@ import DirectMessage from '../components/DirectMessage/DirectMessage';
 import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
+import SendMessageBar from '../components/DirectMessage/SendMessageBar';
 
 export default function ProfileScreen({ route, navigation}) {
     const params = route.params;
@@ -14,7 +15,7 @@ export default function ProfileScreen({ route, navigation}) {
             <Text> Testing Profile Screen </Text>
         </View>
     );
-}
+} 
 
 const styles = StyleSheet.create({
   container: {
