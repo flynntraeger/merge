@@ -9,8 +9,8 @@ const profiles = require('../components/Profile/profiles.json')
 
 export default function DMsScreen({ route, navigation}) {
     const params = route.params;
-    const [searchText, setSearchText] = useState("hsafbhjasbfjbdhjs");
-
+    const [searchText, setSearchText] = useState("");
+    console.log(profiles.user.messages_with[0])
     return (
         <View style={styles.container}>
           <TopBar title="My Messages" desc="Chat with your bonds"/>
