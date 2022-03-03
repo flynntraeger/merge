@@ -6,6 +6,7 @@ import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
 import SendMessageBar from '../components/DirectMessage/SendMessageBar';
+import ProfileHeader from '../components/Profile/ProfileHeader';
 
 export default function ProfileScreen({ route, navigation}) {
     const params = route.params;
@@ -13,6 +14,7 @@ export default function ProfileScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
             <Text> Testing Profile Screen </Text>
+            <ProfileHeader />
         </View>
     );
 } 
