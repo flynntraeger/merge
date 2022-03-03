@@ -1,36 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import TopBar from '../components/TopBar/TopBar';
 import { Button } from 'react-native-elements';
-import DirectMessage from '../components/DirectMessage/DirectMessage';
-import GameInvite from '../components/GameInvite/GameInvite';
-import GameCard from '../components/GameCard/GameCard';
-import UserCard from '../components/UserCard/UserCard';
 
 export default function Start1Screen({ route, navigation }) {
-  const params = route.params;
-  return (
-    <View style={styles.container}>
-      <TopBar title="Start3" desc="Last step" />
-      <Text>Start1 screen test</Text>
-      <Button
-        buttonStyle={styles.iconButton}
-        title={"Finish"}
-        onPress={() => navigation.navigate("Home Screen")}
-      />
-      <Button
-        buttonStyle={styles.iconButton}
-        title={"Back"}
-        onPress={() => navigation.navigate("Start2 Screen")}
-      />
-    </View>
-  );
+    const params = route.params;
+    return (
+        <View style={styles.container}>
+            <Text>Start3 screen test</Text>
+            <Button
+                buttonStyle={styles.iconButton}
+                title={"Finish"}
+                onPress={() => {
+                    params.setShowNav(true);
+                    navigation.navigate("Home Screen")
+                }}
+            />
+            <Button
+                buttonStyle={styles.iconButton}
+                title={"Back"}
+                onPress={() => navigation.navigate("Start2 Screen")}
+            />
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
 });
