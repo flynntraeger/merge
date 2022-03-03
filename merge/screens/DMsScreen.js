@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
 import MessageHeader from '../components/MessageHeader/MessageHeader';
 import { SearchBar } from 'react-native-elements';
 import { Divider } from 'react-native-paper';
+
+const profiles = require('../components/Profile/profiles.json')
 
 export default function DMsScreen({ route, navigation}) {
     const params = route.params;
@@ -12,39 +14,30 @@ export default function DMsScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Messages" desc="Chat with your bonds"/>
+            <ScrollView contentContainerStyle={{width:"100%"}}>
             <SearchBar
               containerStyle={styles.searchBarContainer}
               inputContainerStyle={styles.searchBarTextArea}
               placeholder="Search by username..."
-              onChangeText={(value)=>setSearchText(value)}
+              onChangeText={(value)=>setSearchText(value.toLowerCase())}
               value={searchText}
               inputStyle={styles.searchBarText}
               searchIcon = {{color: "#888888"}}
               clearIcon = {{color: "#888888"}}
               placeholderTextColor = {"#888888"}
             />
-            <MessageHeader 
-              username={"Naftyy"}
-              timestamp={"10:00 AM "}
-              value={10}
-              message={"ajhbfj ajhbfdjh jhafbdfjh am aljndf al,jdfn"}
-              picURL={"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497"}
-            />
-            <MessageHeader 
-              username={"Naftyy"}
-              timestamp={"10:00 AM "}
-              value={10}
-              message={"ajhbfj ajhbfdjh jhafbdfjh am aljndf al,jdfn"}
-              picURL={"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497"}
-            />
-            <MessageHeader 
-              username={"Naftyy"}
-              timestamp={"10:00 AM "}
-              value={10}
-              message={"ajhbfj ajhbfdjh jhafbdfjh am aljndf al,jdfn"}
-              picURL={"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497"}
-            />
-            
+            {Object.keys(profiles.user.messages_with[0]).filter(item => item.toLowerCase().startsWith(searchText)).map((item, index)=> {
+              console.log(profiles[item].imgurl);
+              return <MessageHeader 
+                username={item}
+                key={index}
+                timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].time}
+                value={profiles.user.messages_with[0][item][0]}
+                message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].message}
+                picURL={profiles[item].imgurl}
+              />;
+            })}
+            </ScrollView>
         </View>
     );
 }
@@ -58,7 +51,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   searchBarContainer: {
-    width:"95%",
+    width:375,
     borderTopWidth: 0,
     borderBottomWidth: 0,
     backgroundColor: "#222222"
