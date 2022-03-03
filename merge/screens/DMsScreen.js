@@ -28,7 +28,6 @@ export default function DMsScreen({ route, navigation}) {
               selectionColor='#888888'
             />
             {Object.keys(profiles.user.messages_with[0]).filter(item => item.toLowerCase().startsWith(searchText)).map((item, index)=> {
-              console.log(profiles[item].imgurl);
               return <MessageHeader 
                 username={item}
                 key={index}

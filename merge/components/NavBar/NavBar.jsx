@@ -4,7 +4,7 @@ import { Home, Bell, Mail, Calendar, User } from "react-native-feather";
 import { Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 
-export default function NavBar() {
+export default function NavBar(props) {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
