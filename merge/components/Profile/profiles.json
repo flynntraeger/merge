@@ -53,16 +53,16 @@
             }
         ,
         
-            "Henlo":{
+            "TurtleDuck":{
                 "newMessages": 5,
                 "level": 6,
                 "messages" : [
-                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
-                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
-                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
-                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
-                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
-                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                {"sender": "TurtleDuck", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
+                {"sender": "TurtleDuck", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                {"sender": "CodewordPickle", "time": "19:50", "message": "Val? uwu"},
+                {"sender": "TurtleDuck", "time": "19:50", "message": "Sounds good. owo"},
                 {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
                 ]
             }
@@ -89,11 +89,11 @@
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
         "messages_with": ["user"]
     },
-    "Henlo": {
-        "fname": "Someone",
-        "uname": "Henlo",
+    "TurtleDuck": {
+        "fname": "Rachael",
+        "uname": "TurtleDuck",
         "about": "Hi there, I'm Someone",
-        "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
+        "imgurl": "https://i.pinimg.com/736x/6a/ed/6a/6aed6a2b5849897063098520e1cbf7a2.jpg",
         "messages_with": ["user"]
     }
 }

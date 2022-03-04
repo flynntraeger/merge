@@ -6,13 +6,8 @@ import { useNavigation } from '@react-navigation/native';
 
 const profiles = require('../../components/Profile/profiles.json');
 
-export default function SendMessageBar(props) {
+export default function SendMessageBar({showMessage, onChangeShow}) {
     const [typedText, onChangeText] = React.useState("");
-
-    const handleClick = () => {
-        console.log(typedText);
-        profiles.user.messages_with[props.username].messages.push({"sender": username, "time": "11:20", "message": message });
-    }
 
     return (
         <View style={styles.container}>
@@ -33,9 +28,7 @@ export default function SendMessageBar(props) {
             <Button 
                 icon={<ArrowRightCircle stroke='#57b288' width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={() => {
-                    handleClick();
-                }}
+                onPress={(param) => {onChangeShow(param); onChangeText("");}}
                     
             />
         </View>

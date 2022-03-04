@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
@@ -5,30 +6,46 @@ import SendMessageBar from '../components/DirectMessage/SendMessageBar';
 import DirectMessage from '../components/DirectMessage/DirectMessage';
 import { ScrollView } from 'react-native-gesture-handler';
 
+
 const profiles = require('../components/Profile/profiles.json')
 
-export default function IndividualDMScreen({ route, navigation}) {
-    const params = route.params;
+export default function IndividualDMScreen({ route, navigation }) {
+  const params = route.params;
 
-    return (
-        <View style={styles.container}>
-          <TopBar title={params.username} desc={"Level " + params.level + " Bonds"}/>
-            <ScrollView contentContainerStyle={styles.scrollView}>
-            {profiles.user.messages_with[params.username].messages.map((item, index) => { 
-                return (
-                  <DirectMessage
-                    key={index}
-                    username={item.sender}
-                    timestamp={item.time}
-                    message={item.message}
-                    picURL={profiles[item.sender].imgurl}
-                  />
-                );
-            })}
-            </ScrollView>
-            <SendMessageBar username={params.username}/>
-        </View>
-    );
+  const [showMessage, onChangeShow] = React.useState(false);
+
+  return (
+    <View style={styles.container}>
+      <TopBar backButton={true} navigationPiece={navigation} title={params.username} desc={"Bond Level " + params.level} />
+      <ScrollView contentContainerStyle={styles.scrollView}>
+        {profiles.user.messages_with[params.username].messages.map((item, index) => {
+          return (
+            <DirectMessage
+                key={index}
+                username={item.sender}
+                timestamp={item.time}
+                message={item.message}
+                picURL={profiles[item.sender].imgurl}
+            />
+          );
+        })}
+        {
+          showMessage ? 
+          <DirectMessage
+            username={"CodewordPickle"}
+            timestamp={"11:20"}
+            message={"Hi there!"}
+            picURL={profiles.user.imgurl}
+          />
+          : null
+        }
+      </ScrollView>
+      <SendMessageBar showMessage={showMessage}
+        onChangeShow={(newShow) => {
+          onChangeShow(newShow);
+        }}/>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -44,7 +61,11 @@ const styles = StyleSheet.create({
     paddingBottom:130
   },
   messageContainer: {
-    width:"100%",
+    width: "100%",
     paddingVertical: 5
+  },
+  iconButton: {
+    backgroundColor: "#222222",
+    padding: 0
   }
 });
