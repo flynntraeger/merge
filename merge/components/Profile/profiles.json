@@ -16,6 +16,42 @@
                 {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good"},
                 {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
             ]
+        },
+        {
+            "Rashlasher":[
+                3,
+                {"sender": "Me", "time": "19:48", "message": "Hey!"},
+                {"sender": "Rashlasher", "time": "19:48", "message": "Hi! How's it going?"},
+                {"sender": "Me", "time": "19:49", "message": "Good! Wanna play later?"},
+                {"sender": "Rashlasher", "time": "19:49", "message": "Yea sure, what you thinking?"},
+                {"sender": "Me", "time": "19:50", "message": "Val?"},
+                {"sender": "Rashlasher", "time": "19:50", "message": "Sounds good"},
+                {"sender": "Rashlasher", "time": "19:51", "message": "Set it up?"}
+            ]
+        },
+        {
+            "Naftyy":[
+                4,
+                {"sender": "Me", "time": "19:48", "message": "Hey!"},
+                {"sender": "Naftyy", "time": "19:48", "message": "Hi! How's it going?"},
+                {"sender": "Me", "time": "19:49", "message": "Good! Wanna play later?"},
+                {"sender": "Naftyy", "time": "19:49", "message": "Yea sure, what you thinking?"},
+                {"sender": "Me", "time": "19:50", "message": "Val?"},
+                {"sender": "Naftyy", "time": "19:50", "message": "Sounds good"},
+                {"sender": "Naftyy", "time": "19:51", "message": "Set it up?"}
+            ]
+        },
+        {
+            "Henlo":[
+                5,
+                {"sender": "Me", "time": "19:48", "message": "Hey!"},
+                {"sender": "Henlo", "time": "19:48", "message": "Hi! How's it going?"},
+                {"sender": "Me", "time": "19:49", "message": "Good! Wanna play later?"},
+                {"sender": "Henlo", "time": "19:49", "message": "Yea sure, what you thinking?"},
+                {"sender": "Me", "time": "19:50", "message": "Val?"},
+                {"sender": "Henlo", "time": "19:50", "message": "Sounds good"},
+                {"sender": "Henlo", "time": "19:51", "message": "Set it up?"}
+            ]
         }]
     },
     "YungTriggz": {
@@ -29,7 +65,7 @@
         "fname": "Ember",
         "uname": "Rashlasher",
         "about": "Hi there, I'm Ember!",
-        "imgurl": "",
+        "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
         "messages_with": ["user"]
     },
     "Naftyy": {
@@ -37,6 +73,13 @@
         "uname": "Naftyy",
         "about": "I'd like a warm bagel right now.",
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
+        "messages_with": ["user"]
+    },
+    "Henlo": {
+        "fname": "Someone",
+        "uname": "Henlo",
+        "about": "Hi there, I'm Someone",
+        "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
         "messages_with": ["user"]
     }
 }
