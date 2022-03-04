@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
       justifyContent: "flex-start",
       padding: 15,
       backgroundColor:'#353535',
-      fontFamily: 'Manrope'
+      fontFamily: 'Manrope',
+      marginVertical: 5
     },
     leftCol: {
       flexDirection:"row",

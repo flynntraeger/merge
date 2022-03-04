@@ -12,7 +12,7 @@ export default function NotifScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Feed" desc="View your latest notifications"/>
-            <Text> Testing Notif Screen </Text>
+            <Text style={{color: "#ffffff"}}> Testing Notif Screen </Text>
         </View>
     );
 }
@@ -20,6 +20,8 @@ export default function NotifScreen({ route, navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#222222",
+    color: "#ffffff",
     justifyContent: 'center',
     alignItems: 'center'
   },

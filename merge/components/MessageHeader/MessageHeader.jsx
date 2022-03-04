@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         top: 0,
         left: 35,
-        backgroundColor: "#7ba692",
+        backgroundColor: "#6abd96",
         borderWidth: 1,
         borderColor: "#353535",
         color: "#222222"

@@ -12,7 +12,7 @@ export default function HomeScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Home" desc="View your connections"/>
-            <Text> Testing Home Screen </Text>
+            <Text style={{color: "#ffffff"}}> Testing Home Screen </Text>
         </View>
     );
 }
@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    backgroundColor: "#222222",
+    color: "#ffffff",
     alignItems: 'center'
   },
 });

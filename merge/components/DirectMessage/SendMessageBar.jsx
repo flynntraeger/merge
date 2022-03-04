@@ -4,30 +4,39 @@ import { Home, Bell, Mail, Calendar, User, PlusSquare, Upload, ArrowRightCircle 
 import { Button } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
 
-export default function SendMessageBar() {
-    const [text, onChangeText] = React.useState("Send a message...");
+const profiles = require('../../components/Profile/profiles.json');
+
+export default function SendMessageBar(props) {
+    const [typedText, onChangeText] = React.useState("");
+
+    const handleClick = () => {
+        console.log(typedText);
+        profiles.user.messages_with[props.username].messages.push({"sender": username, "time": "11:20", "message": message });
+    }
+
     return (
         <View style={styles.container}>
             <Button 
                 icon={<PlusSquare stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={()=>navigation.navigate("Home Screen")}
             />
             <Button 
                 icon={<Upload stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={()=>navigation.navigate("Home Screen")}
             />
             <TextInput 
                 style={styles.input}
                 onChangeText={onChangeText} 
-                value={text}
+                value={typedText}
                 selectionColor='#888888'
             />
             <Button 
                 icon={<ArrowRightCircle stroke='#57b288' width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={()=>navigation.navigate("Home Screen")}
+                onPress={() => {
+                    handleClick();
+                }}
+                    
             />
         </View>
     );

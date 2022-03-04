@@ -12,7 +12,7 @@ export default function EventsScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Events" desc="View your gaming schedule"/>
-            <Text> Testing Events Screen </Text>
+          <Text style={{color: "#ffffff"}}> Testing Events Screen </Text>
         </View>
     );
 }
@@ -20,6 +20,7 @@ export default function EventsScreen({ route, navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#222222",
     justifyContent: 'center',
     alignItems: 'center'
   },

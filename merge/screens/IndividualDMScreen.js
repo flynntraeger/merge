@@ -12,22 +12,21 @@ export default function IndividualDMScreen({ route, navigation}) {
 
     return (
         <View style={styles.container}>
-          <TopBar title={params.username} desc={"Bond Level " + params.level}/>
+          <TopBar title={params.username} desc={"Level " + params.level + " Bonds"}/>
             <ScrollView contentContainerStyle={styles.scrollView}>
             {profiles.user.messages_with[params.username].messages.map((item, index) => { 
                 return (
-                <View style={styles.messageContainer} key={index}>
                   <DirectMessage
+                    key={index}
                     username={item.sender}
                     timestamp={item.time}
                     message={item.message}
                     picURL={profiles[item.sender].imgurl}
                   />
-                </View>
                 );
             })}
             </ScrollView>
-            <SendMessageBar/>
+            <SendMessageBar username={params.username}/>
         </View>
     );
 }
@@ -41,7 +40,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   scrollView: {
-    width:"100%"
+    width:"100%",
+    paddingBottom:130
   },
   messageContainer: {
     width:"100%",
