@@ -13,7 +13,6 @@ export default function ProfileScreen({ route, navigation}) {
 	//notif screen code blah blah
     return (
         <View style={styles.container}>
-            <Text> Testing Profile Screen </Text>
             <ProfileHeader />
         </View>
     );
@@ -23,6 +22,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: "#222222"
   },
 });
