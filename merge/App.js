@@ -21,7 +21,7 @@ export default class App extends React.Component {
         super(props);
         this.state = {
             username: null,
-            showNav: false,
+            showNav: true,
         };
     }
 
@@ -38,9 +38,6 @@ export default class App extends React.Component {
         return (
             <NavigationContainer>
                 <Stack.Navigator screenOptions={{ animationEnabled: false }}>
-                    <Stack.Screen name="Start1 Screen" component={Start1Screen} options={{ headerShown: false }} initialParams={{ setUsername: this.setUsername }} />
-                    <Stack.Screen name="Start2 Screen" component={Start2Screen} options={{ headerShown: false }} />
-                    <Stack.Screen name="Start3 Screen" component={Start3Screen} options={{ headerShown: false }} initialParams={{ setShowNav: this.setShowNav }} />
                     <Stack.Screen name="Home Screen" component={HomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Notif Screen" component={NotifScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="DMs Screen" component={DMsScreen} options={{ headerShown: false }} />
