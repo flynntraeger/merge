@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         scaleY: 2,
         backgroundColor: "#95cf97",
         borderWidth: 1,
-        borderColor: "#353535",
+        borderColor: "black",
         color: "#222222"
     },
     statusIcon: {
