@@ -6,16 +6,18 @@
         "about": "Hi there, I'm User",
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
         "messages_with": [{
-            "YungTriggz":[
-                2,
-                {"sender": "Me", "time": "19:48", "message": "Hey!"},
+            "YungTriggz":{
+                "newMessages": 2,
+                "messages" : [
+                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
                 {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
-                {"sender": "Me", "time": "19:49", "message": "Good! Wanna play later?"},
+                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
                 {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
-                {"sender": "Me", "time": "19:50", "message": "Val?"},
-                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good"},
+                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
+                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
                 {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
-            ]
+                ]
+            }
         }]
     },
     "YungTriggz": {

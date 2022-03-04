@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import NotifScreen from './screens/NotifScreen';
+import IndividualDMScreen from './screens/IndividualDMScreen';
 import DMsScreen from './screens/DMsScreen';
 import EventsScreen from './screens/EventsScreen';
 import ProfileScreen from './screens/ProfileScreen';
@@ -40,7 +41,7 @@ export default class App extends React.Component {
                 <Stack.Navigator screenOptions={{ animationEnabled: false }}>
                     <Stack.Screen name="Home Screen" component={HomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Notif Screen" component={NotifScreen} options={{ headerShown: false }} />
-                    <Stack.Screen name="DMs Screen" component={DMsScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="DMs Screen" component={IndividualDMScreen} initialParams={{username:"YungTriggz", level:17}} options={{ headerShown: false }} />
                     <Stack.Screen name="Events Screen" component={EventsScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Profile Screen" component={ProfileScreen} options={{ headerShown: false }} />
                 </Stack.Navigator>

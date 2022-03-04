@@ -14,9 +14,8 @@ export default function IndividualDM({ route, navigation }) {
     <View style={styles.container}>
       <TopBar title={"YungTriggz"} desc="Bond Level 15" />  {/* this needs to be inside Object.keys etc to benefit from profiles.json access when props passed down */}
       <ScrollView style={styles.scrollView}>
-        {Object.keys(profiles.user.messages_with[0]).map((item, index) => { // couldn't figure out how to iterate for components?
-          // I've definitely done this in react but cant figure out what I was doing wrong. Will try again in the morning
-          return <div>
+      {Object.keys(profiles.user.messages_with[0]).map((item, index) => { 
+          return
             <DirectMessage
               username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 7].sender}
               key={index}
@@ -24,49 +23,6 @@ export default function IndividualDM({ route, navigation }) {
               message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 7].message}
               picURL={profiles["user"].imgurl}
             />
-            <DirectMessage
-              username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 6].sender}
-              key={index}
-              timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 6].time}
-              message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 6].message}
-              picURL={profiles[item].imgurl}
-            />
-            <DirectMessage
-              username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 5].sender}
-              key={index}
-              timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 5].time}
-              message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 5].message}
-              picURL={profiles["user"].imgurl}
-            />
-            <DirectMessage
-              username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 4].sender}
-              key={index}
-              timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 4].time}
-              message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 4].message}
-              picURL={profiles[item].imgurl}
-            />
-            <DirectMessage
-              username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 3].sender}
-              key={index}
-              timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 3].time}
-              message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 3].message}
-              picURL={profiles["user"].imgurl}
-            />
-            <DirectMessage
-              username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 2].sender}
-              key={index}
-              timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 2].time}
-              message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 2].message}
-              picURL={profiles[item].imgurl}
-            />
-            <DirectMessage
-              username={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].sender}
-              key={index}
-              timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].time}
-              message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].message}
-              picURL={profiles[item].imgurl}
-            />
-          </div>
         })};
       </ScrollView>
       <SendMessageBar />
