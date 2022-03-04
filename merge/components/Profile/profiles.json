@@ -5,7 +5,7 @@
         "uname": "Codeword Pickle",
         "about": "Hi there, I'm User",
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
-        "messages_with": [{
+        "messages_with": {
             "YungTriggz":{
                 "newMessages": 2,
                 "messages" : [
@@ -18,7 +18,48 @@
                 {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
                 ]
             }
-        }]
+        ,       
+            "Rashlasher":{
+                "newMessages": 1,
+                "messages" : [
+                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
+                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
+                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
+                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
+                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
+                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
+                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
+                ]
+            }
+        ,
+        
+            "Naftyy":{
+                "newMessages": 3,
+                "messages" : [
+                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
+                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
+                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
+                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
+                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
+                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
+                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
+                ]
+            }
+        ,
+        
+            "Henlo":{
+                "newMessages": 5,
+                "messages" : [
+                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
+                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
+                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
+                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
+                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
+                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
+                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
+                ]
+            }
+        }
     },
     "YungTriggz": {
         "fname": "Flynn",
@@ -31,7 +72,7 @@
         "fname": "Ember",
         "uname": "Rashlasher",
         "about": "Hi there, I'm Ember!",
-        "imgurl": "",
+        "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
         "messages_with": ["user"]
     },
     "Naftyy": {
@@ -39,6 +80,13 @@
         "uname": "Naftyy",
         "about": "I'd like a warm bagel right now.",
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
+        "messages_with": ["user"]
+    },
+    "Henlo": {
+        "fname": "Someone",
+        "uname": "Henlo",
+        "about": "Hi there, I'm Someone",
+        "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
         "messages_with": ["user"]
     }
 }
