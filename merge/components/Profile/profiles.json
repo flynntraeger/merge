@@ -8,6 +8,7 @@
         "messages_with": {
             "YungTriggz":{
                 "newMessages": 2,
+                "level": 17,
                 "messages" : [
                 {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
                 {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
@@ -21,6 +22,7 @@
         ,       
             "Rashlasher":{
                 "newMessages": 1,
+                "level": 10,
                 "messages" : [
                 {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
                 {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
@@ -35,6 +37,7 @@
         
             "Naftyy":{
                 "newMessages": 3,
+                "level": 3,
                 "messages" : [
                 {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
                 {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
@@ -49,6 +52,7 @@
         
             "Henlo":{
                 "newMessages": 5,
+                "level": 6,
                 "messages" : [
                 {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
                 {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},

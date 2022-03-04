@@ -4,6 +4,8 @@ import { Avatar, Button } from 'react-native-elements';
 import { Badge } from 'react-native-paper';
 import { ChevronRight} from "react-native-feather";
 
+const profiles = require('../../components/Profile/profiles.json')
+
 class MessageHeader extends React.Component {
   constructor(props) {
     super(props);
@@ -30,6 +32,8 @@ class MessageHeader extends React.Component {
                         <Button 
                             icon={<ChevronRight stroke="#888888" width={15} height={15} />}
                             buttonStyle={styles.iconButton}
+                            onPress={() => this.props.nav.navigate('Individual Message Screen', {username: this.props.username, level: profiles.user.messages_with[this.props.username].level})
+                            }
                         />
                     </View>
                 </View>

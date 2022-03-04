@@ -27,14 +27,15 @@ export default function DMsScreen({ route, navigation }) {
           placeholderTextColor={"#888888"}
           selectionColor='#888888'
         />
-        {Object.keys(profiles.user.messages_with[0]).filter(item => item.toLowerCase().startsWith(searchText)).map((item, index) => {
+        {Object.keys(profiles.user.messages_with).filter(item => item.toLowerCase().startsWith(searchText)).map((item, index) => {
           return <MessageHeader
             username={item}
             key={index}
-            timestamp={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].time}
-            value={profiles.user.messages_with[0][item][0]}
-            message={profiles.user.messages_with[0][item][profiles.user.messages_with[0][item].length - 1].message}
+            timestamp={profiles.user.messages_with[item].messages[profiles.user.messages_with[item].messages.length - 1].time}
+            value={profiles.user.messages_with[item].newMessages}
+            message={profiles.user.messages_with[item].messages[profiles.user.messages_with[item].messages.length - 1].message}
             picURL={profiles[item].imgurl}
+            nav={navigation}
           />
         })}
       </ScrollView>

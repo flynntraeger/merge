@@ -41,9 +41,10 @@ export default class App extends React.Component {
                 <Stack.Navigator screenOptions={{ animationEnabled: false }}>
                     <Stack.Screen name="Home Screen" component={HomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Notif Screen" component={NotifScreen} options={{ headerShown: false }} />
-                    <Stack.Screen name="DMs Screen" component={IndividualDMScreen} initialParams={{username:"YungTriggz", level:17}} options={{ headerShown: false }} />
+                    <Stack.Screen name="DMs Screen" component={DMsScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Events Screen" component={EventsScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Profile Screen" component={ProfileScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="Individual Message Screen" component={IndividualDMScreen} options={{ headerShown: false }} />
                 </Stack.Navigator>
                 {this.state.showNav ? <NavBar /> : null}
             </NavigationContainer>

@@ -9,15 +9,15 @@ const profiles = require('../components/Profile/profiles.json')
 
 export default function IndividualDMScreen({ route, navigation}) {
     const params = route.params;
+
     return (
         <View style={styles.container}>
           <TopBar title={params.username} desc={"Bond Level " + params.level}/>
             <ScrollView contentContainerStyle={styles.scrollView}>
             {profiles.user.messages_with[params.username].messages.map((item, index) => { 
                 return (
-                <View style={styles.messageContainer}>
+                <View style={styles.messageContainer} key={index}>
                   <DirectMessage
-                    key={index}
                     username={item.sender}
                     timestamp={item.time}
                     message={item.message}
