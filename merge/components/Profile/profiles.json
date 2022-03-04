@@ -4,22 +4,19 @@
         "fname": "User",
         "uname": "Codeword Pickle",
         "about": "Hi there, I'm User",
-        "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
+        "imgurl": "https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3",
         "messages_with": {
             "YungTriggz":{
                 "newMessages": 2,
                 "level": 17,
                 "messages" : [
-                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
-                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
-                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
-                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
-                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
-                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
-                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"},
-                {"sender": "user", "time": "19:50", "message": "For sure!"},
-                {"sender": "user", "time": "19:50", "message": "What time are you free?"},
-                {"sender": "user", "time": "19:50", "message": "Hello?"}
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                    {"sender": "YungTriggz", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
+                    {"sender": "YungTriggz", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                    {"sender": "YungTriggz", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                    {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
+                    {"sender": "YungTriggz", "time": "Today @ 3:14PM", "message": "please accept :)"}
                 ]
             }
         ,       
@@ -27,13 +24,12 @@
                 "newMessages": 1,
                 "level": 10,
                 "messages" : [
-                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
-                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
-                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
-                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
-                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
-                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
-                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                    {"sender": "Rashlasher", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
+                    {"sender": "Rashlasher", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                    {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
+                    {"sender": "Rashlasher", "time": "Today @ 11:24AM", "message": "Let me in the party plz"}
                 ]
             }
         ,
@@ -42,28 +38,52 @@
                 "newMessages": 3,
                 "level": 3,
                 "messages" : [
-                {"sender": "user", "time": "19:48", "message": "Hey! What's up?"},
-                {"sender": "YungTriggz", "time": "19:48", "message": "Hi! How's it going?"},
-                {"sender": "user", "time": "19:49", "message": "I'm good! Wanna play later?"},
-                {"sender": "YungTriggz", "time": "19:49", "message": "Yea sure, what you thinking?"},
-                {"sender": "user", "time": "19:50", "message": "Val? uwu"},
-                {"sender": "YungTriggz", "time": "19:50", "message": "Sounds good. owo"},
-                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                    {"sender": "Naftyy", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
+                    {"sender": "Naftyy", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                    {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
+                    {"sender": "Naftyy", "time": "Yesterday @ 11:59PM", "message": "GG. headin to bed. zzz."}
                 ]
             }
         ,
         
             "TurtleDuck":{
-                "newMessages": 5,
+                "newMessages": 4,
                 "level": 6,
                 "messages" : [
                 {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
                 {"sender": "TurtleDuck", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
                 {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
                 {"sender": "TurtleDuck", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                {"sender": "CodewordPickle", "time": "19:50", "message": "Val? uwu"},
-                {"sender": "TurtleDuck", "time": "19:50", "message": "Sounds good. owo"},
-                {"sender": "YungTriggz", "time": "19:51", "message": "Set it up?"}
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
+                {"sender": "TurtleDuck", "time": "Yesterday @ 3:50PM", "message": "lets play agin sometime! uwu! owo!"}
+                ]
+            },
+
+            "Dubway":{
+                "newMessages": 1,
+                "level": 3,
+                "messages" : [
+                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                {"sender": "Dubway", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
+                {"sender": "Dubway", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
+                {"sender": "Dubway", "time": "Feb 2 @ 12:48PM", "message": "i just got a coupon for $2 off at subway lol"}
+                ]
+            },
+
+            "KeeWee":{
+                "newMessages": 2,
+                "level": 1,
+                "messages" : [
+                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                {"sender": "KeeWee", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
+                {"sender": "KeeWee", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
+                {"sender": "KeeWee", "time": "Feb 1 @ 8:30AM", "message": "Hey! Have you see the latest season of centaurworld?"}
                 ]
             }
         }
@@ -75,11 +95,18 @@
         "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
         "messages_with": ["user"]
     },
+    "CodewordPickle": {
+        "fname": "Miranda",
+        "uname": "CodewordPickle",
+        "about": "Hi there, I'm Flynn",
+        "imgurl": "https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3",
+        "messages_with": ["user"]
+    },
     "Rashlasher": {
         "fname": "Ember",
         "uname": "Rashlasher",
         "about": "Hi there, I'm Ember!",
-        "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
+        "imgurl": "https://i.pinimg.com/736x/a0/f0/13/a0f0139fcd8b25ec1fcacb62963a0b75.jpg",
         "messages_with": ["user"]
     },
     "Naftyy": {
@@ -94,6 +121,27 @@
         "uname": "TurtleDuck",
         "about": "Hi there, I'm Someone",
         "imgurl": "https://i.pinimg.com/736x/6a/ed/6a/6aed6a2b5849897063098520e1cbf7a2.jpg",
+        "messages_with": ["user"]
+    },
+    "KeeWee": {
+        "fname": "Dovid",
+        "uname": "KeeWee",
+        "about": "Hi there, I'm Someone",
+        "imgurl": "https://i.pinimg.com/originals/97/5c/dd/975cdd87fe34a5832f07b8e17d5edd1d.jpg",
+        "messages_with": ["user"]
+    },
+    "Al_x_9": {
+        "fname": "Amy",
+        "uname": "Al_x_9",
+        "about": "Hi there, I'm Someone",
+        "imgurl": "https://i.pinimg.com/236x/fa/fa/22/fafa222b67b7b6a084cfc7ade2f894b5.jpg",
+        "messages_with": ["user"]
+    },
+    "Dubway": {
+        "fname": "Tony",
+        "uname": "Dubway",
+        "about": "Hi there, I'm Someone",
+        "imgurl": "https://i.pinimg.com/originals/09/c5/77/09c57778b0a8d2b746bad8704d8f91be.jpg",
         "messages_with": ["user"]
     }
 }

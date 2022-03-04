@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
 import SendMessageBar from '../components/DirectMessage/SendMessageBar';
 import DirectMessage from '../components/DirectMessage/DirectMessage';
+import GameInvite from '../components/GameInvite/GameInvite';
 import { ScrollView } from 'react-native-gesture-handler';
 
 
@@ -13,13 +14,16 @@ export default function IndividualDMScreen({ route, navigation }) {
   const params = route.params;
 
   const [showMessage, onChangeShow] = React.useState(false);
+  const [showInvite, onChangeInvite] = React.useState(true);
 
   return (
     <View style={styles.container}>
       <TopBar backButton={true} navigationPiece={navigation} title={params.username} desc={"Bond Level " + params.level} />
       <ScrollView contentContainerStyle={styles.scrollView}>
         {profiles.user.messages_with[params.username].messages.map((item, index) => {
-          return (
+          return ( index === 4 ?
+            <GameInvite key={index} username={params.username} game="Minecraft" time="5:00PM" date="Feb 4" active ={true} handler={onChangeInvite}/>
+            :
             <DirectMessage
                 key={index}
                 username={item.sender}
@@ -33,7 +37,7 @@ export default function IndividualDMScreen({ route, navigation }) {
           showMessage ? 
           <DirectMessage
             username={"CodewordPickle"}
-            timestamp={"11:20"}
+            timestamp={"Today @ 11:21AM"}
             message={"Hi there!"}
             picURL={profiles.user.imgurl}
           />

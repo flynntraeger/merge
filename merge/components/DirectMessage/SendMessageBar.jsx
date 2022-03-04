@@ -24,6 +24,8 @@ export default function SendMessageBar({showMessage, onChangeShow}) {
                 onChangeText={onChangeText} 
                 value={typedText}
                 selectionColor='#888888'
+                placeholderTextColor={"#888888"}
+                placeholder="Send a message..."
             />
             <Button 
                 icon={<ArrowRightCircle stroke='#57b288' width={26} height={26} />}

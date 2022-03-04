@@ -10,12 +10,10 @@ const profiles = require('../components/Profile/profiles.json')
 export default function DMsScreen({ route, navigation }) {
   const params = route.params;
   const [searchText, setSearchText] = useState("");
-  console.log(profiles.user.messages_with[1])
   return (
     <View style={styles.container}>
       <TopBar title="My Messages" desc="Chat with your bonds" />
-      <ScrollView contentContainerStyle={{ width: "100%" }}>
-        <SearchBar
+      <SearchBar
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={styles.searchBarTextArea}
           placeholder="Search by username..."
@@ -27,6 +25,7 @@ export default function DMsScreen({ route, navigation }) {
           placeholderTextColor={"#888888"}
           selectionColor='#888888'
         />
+      <ScrollView contentContainerStyle={{ width: "100%" }}>
         {Object.keys(profiles.user.messages_with).filter(item => item.toLowerCase().startsWith(searchText)).map((item, index) => {
           return <MessageHeader
             username={item}

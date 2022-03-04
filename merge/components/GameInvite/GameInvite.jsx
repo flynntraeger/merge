@@ -23,7 +23,8 @@ class GameInvite extends React.Component {
                         buttonStyle={styles.button}
                         titleStyle={styles.buttonText}
                         title="Accept"
-                        onPress={()=> this.setState({active: false})}
+                        onPress={()=> { this.props.handler(true);
+                            this.setState({active: false});}}
                     />
                     <Button
                         containerStyle={styles.buttonContainter}
@@ -42,12 +43,13 @@ class GameInvite extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-      width: "95%",
+      width:"95%",
       borderWidth: 1,
       borderColor: "#57B288",
       borderRadius: 10,
       flexDirection:"column",
       justifyContent:"flex-start",
+      flexWrap: "wrap",
       alignItems: "center",
       padding: 15,
       backgroundColor:'#222222',
@@ -58,20 +60,22 @@ const styles = StyleSheet.create({
         flexWrap: "wrap"
     },
     botRow: {
-        width: "75%",
+        width: "50%",
         paddingTop: 10,
         flexDirection:"row",
-        justifyContent:"space-between"
+        alignItems:"center",
+        justifyContent:"center"
     },
     button: {
         backgroundColor: "#57B288",
         paddingHorizontal: 15,
         paddingVertical: 6,
-        borderRadius: 15
+        borderRadius: 15,
+        marginHorizontal: 20
     },
     buttonContainter: {
         flexDirection: "row",
-        justifyContent:"flex-start"
+        justifyContent:"center"
     },
     text: {
         fontSize: 13,
