@@ -55,10 +55,9 @@ export default function IndividualDMScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-start',
-    paddingTop: 95,
+    flexDirection:"column",
     backgroundColor: "#222222",
-    alignItems: 'center'
+    alignItems:"center",
   },
   scrollView: {
     width:"100%",

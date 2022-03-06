@@ -2,17 +2,43 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
 import DirectMessage from '../components/DirectMessage/DirectMessage';
+import Notification from '../components/Notification/Notification';
+import GameNotif from '../components/Notification/GameNotif';
 import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
+import { ScrollView } from 'react-native-gesture-handler';
+
+const profiles = require('../components/Profile/profiles.json')
+const notifs = require('../components/Notification/notifications.json')
 
 export default function NotifScreen({ route, navigation}) {
     const params = route.params;
-	//notif screen code blah blah
+
     return (
         <View style={styles.container}>
           <TopBar title="My Feed" desc="View your latest notifications"/>
-            <Text style={{color: "#ffffff"}}> Testing Notif Screen </Text>
+          <ScrollView contentContainerStyle={{ width: "100%", marginTop: 10, paddingBottom: 100}}>
+          {notifs.map((item, index) => {
+            return (item.title === "GameNotif" ?
+            <GameNotif
+              key={index}
+              title = {item.title}
+              user = {item.user}
+              message = {item.message}
+              active = {item.active}
+            />
+            : <Notification
+              key={index}
+              title = {item.title}
+              user = {item.user}
+              message = {item.message}
+              timestamp = {item.time}
+              picURL = {profiles[item.user].imgurl}
+            />
+            )
+          })}
+          </ScrollView>
         </View>
     );
 }
@@ -20,9 +46,9 @@ export default function NotifScreen({ route, navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection:"column",
     backgroundColor: "#222222",
     color: "#ffffff",
-    justifyContent: 'center',
-    alignItems: 'center'
+    alignItems:"center",
   },
 });

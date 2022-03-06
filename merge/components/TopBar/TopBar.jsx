@@ -35,8 +35,6 @@ class TopBar extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    position: "absolute",
-    top: 0,
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",

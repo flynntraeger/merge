@@ -17,7 +17,7 @@ export default function DMsScreen({ route, navigation }) {
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={styles.searchBarTextArea}
           placeholder="Search by username..."
-          onChangeText={(value) => setSearchText(value.toLowerCase())}
+          onChangeText={(value) => setSearchText(value)}
           value={searchText}
           inputStyle={styles.searchBarText}
           searchIcon={{ color: "#888888" }}
@@ -26,7 +26,7 @@ export default function DMsScreen({ route, navigation }) {
           selectionColor='#888888'
         />
       <ScrollView contentContainerStyle={{ width: "100%" }}>
-        {Object.keys(profiles.user.messages_with).filter(item => item.toLowerCase().startsWith(searchText)).map((item, index) => {
+        {Object.keys(profiles.user.messages_with).filter(item => item.toLowerCase().startsWith(searchText.toLowerCase())).map((item, index) => {
           return <MessageHeader
             username={item}
             key={index}
@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',
-    paddingTop: 95,
     backgroundColor: "#222222",
     alignItems: 'center'
   },

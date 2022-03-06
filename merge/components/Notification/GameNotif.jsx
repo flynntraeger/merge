@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet} from 'react-native';
 import { Button } from 'react-native-elements';
 
-class GameInvite extends React.Component {
+class GameNotif extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ class GameInvite extends React.Component {
     return (
         <View style={styles.container}>
             <View style={styles.topRow}>
-                <Text style={styles.text}>{this.props.username} sent an invite to play {this.props.game} @ {this.props.time} on {this.props.date}</Text>
+                <Text style={styles.text}>{this.props.user} {this.props.message}</Text>
             </View>
             {this.state.active ?
                 <View style={styles.botRow}>
@@ -23,8 +23,7 @@ class GameInvite extends React.Component {
                         buttonStyle={styles.button}
                         titleStyle={styles.buttonText}
                         title="Accept"
-                        onPress={()=> { this.props.handler(true);
-                            this.setState({active: false});}}
+                        onPress={()=> this.setState({active: false})}
                     />
                     <Button
                         containerStyle={styles.buttonContainter}
@@ -43,7 +42,7 @@ class GameInvite extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-      maxWidth: "95%",
+      minWidth:"95%",
       borderWidth: 1,
       borderColor: "#57B288",
       borderRadius: 10,
@@ -53,7 +52,8 @@ const styles = StyleSheet.create({
       alignItems: "center",
       padding: 15,
       backgroundColor:'#222222',
-      fontFamily: 'Manrope'
+      fontFamily: 'Manrope',
+      marginVertical: 5
     },
     topRow: {
         flexDirection:"row",
@@ -89,4 +89,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default GameInvite;
+export default GameNotif;

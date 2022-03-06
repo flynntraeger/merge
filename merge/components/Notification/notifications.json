@@ -1,0 +1,50 @@
+[
+    {
+        "title": "GameNotif",
+        "user": "Naftyy", 
+        "message": "sent an invite to 'ValoBalo' to play Valorant just now!",
+        "active": false
+    },
+    {
+        "title": "New Connection",
+        "user": "Rashlasher", 
+        "message": "Rashlasher is a new firend of Naftyy's. Send them a chat!",
+        "time": "Today @ 5:38PM"
+    },
+    {
+        "title": "New Friend Invite",
+        "user": "KeeWee", 
+        "message": "Keewee wants to be your friend!",
+        "time": "Today @ 3:02PM"
+    },
+    {
+        "title": "GameNotif",
+        "user": "TurtleDuck", 
+        "message": "started playing TemTem @ 4:13PM. Join them?",
+        "active": true
+    },
+    {
+        "title": "New Friend Invite",
+        "user": "YungTriggz", 
+        "message": "YungTriggz wants to be your friend!",
+        "time": "Today @ 1:42PM"
+    },
+    {
+        "title": "Bond Level Up",
+        "user": "Naftyy", 
+        "message": "Your bond with Naftyy has reached Level 17!",
+        "time": "Today @ 11:17AM"
+    },
+    {
+        "title": "First Game",
+        "user": "Dubway", 
+        "message": "You played with Dubway for the first time!",
+        "time": "Yesterday @ 9:20PM"
+    },    
+    {
+        "title": "GameNotif",
+        "user": "Rashlasher", 
+        "message": "sent an invite to play League of Legends @ 8:00PM on Feb 2",
+        "active": false
+    }
+]
