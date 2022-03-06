@@ -36,7 +36,9 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "webpack-hot-middleware": "^2.25.1"
   },
   "private": true
 }
