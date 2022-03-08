@@ -35,13 +35,17 @@ const styles = StyleSheet.create({
       backgroundColor:'#313131',
       justifyContent: 'center',
       alignItems: 'flex-start',
-      paddingHorizontal: 20
+      paddingHorizontal: 20,
+      borderTopRightRadius: 10,
+      borderBottomRightRadius: 10
     },
     leftBox: {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#484848',
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
+        borderTopLeftRadius: 10,
+        borderBottomLeftRadius: 10
     },
     leftBoxText: {
         color: '#FFFFFF',
