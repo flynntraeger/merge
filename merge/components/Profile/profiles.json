@@ -91,57 +91,81 @@
     "YungTriggz": {
         "fname": "Flynn",
         "uname": "YungTriggz",
+        "type": "Competitive Gamer",
         "about": "Hi there, I'm Flynn",
         "imgurl": "https://i.pinimg.com/originals/91/ef/38/91ef38bf51209d07e8501f992cf3f7d6.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "CodewordPickle": {
         "fname": "Miranda",
         "uname": "CodewordPickle",
-        "about": "Hi there, I'm Flynn",
+        "type": "Casual Gamer",
+        "about": "All is good. Today I win at life. Hope you have a nice day :D",
         "imgurl": "https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "Rashlasher": {
         "fname": "Ember",
         "uname": "Rashlasher",
+        "type": "Casual Gamer",
         "about": "Hi there, I'm Ember!",
         "imgurl": "https://i.pinimg.com/736x/a0/f0/13/a0f0139fcd8b25ec1fcacb62963a0b75.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "Naftyy": {
         "fname": "Edgar",
         "uname": "Naftyy",
+        "type": "Competitive Gamer",
         "about": "I'd like a warm bagel right now.",
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "TurtleDuck": {
         "fname": "Rachael",
         "uname": "TurtleDuck",
+        "type": "Casual Gamer",
         "about": "Hi there, I'm Someone",
         "imgurl": "https://i.pinimg.com/736x/6a/ed/6a/6aed6a2b5849897063098520e1cbf7a2.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "KeeWee": {
         "fname": "Dovid",
         "uname": "KeeWee",
+        "type": "New Gamer",
         "about": "Hi there, I'm Someone",
         "imgurl": "https://i.pinimg.com/originals/97/5c/dd/975cdd87fe34a5832f07b8e17d5edd1d.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "Al_x_9": {
         "fname": "Amy",
         "uname": "Al_x_9",
+        "type": "Casual Gamer",
         "about": "Hi there, I'm Someone",
         "imgurl": "https://i.pinimg.com/236x/fa/fa/22/fafa222b67b7b6a084cfc7ade2f894b5.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     },
     "Dubway": {
         "fname": "Tony",
         "uname": "Dubway",
+        "type": "Competitive Gamer",
         "about": "Hi there, I'm Someone",
         "imgurl": "https://i.pinimg.com/originals/09/c5/77/09c57778b0a8d2b746bad8704d8f91be.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
         "messages_with": ["user"]
     }
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, React, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
@@ -7,6 +7,7 @@ import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
 
+
 const profiles = require('../components/Profile/profiles.json')
 
 export default function HomeScreen({ route, navigation}) {
@@ -14,6 +15,7 @@ export default function HomeScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Home" desc="View your connections"/>
+          
         </View>
     );
 }
