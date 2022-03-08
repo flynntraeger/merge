@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   body: {
     width:"100%",
     alignItems: "center",
-    marginTop: 190,
+    marginTop: 170,
     marginBottom: 90
   }
 });
