@@ -1,67 +1,83 @@
 import React from "react";
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-// import AvatarSection from '../components/AvatarSection/AvatarSection';
+import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity } from 'react-native';
 
 export default function Start1Screen({ route, navigation }) {
     const params = route.params;
 
     return (
         <View style={styles.container}>
-            {/* <AvatarSection text="Let's get started by making your profile..." /> */}
-            <View style={styles.formWrapper}>
-                <View style={styles.formRow}>
-                    <Text style={styles.formRowText}>Username</Text>
-                    <TextInput
-                        onChangeText={text => params.setUsername(text)}
-                        style={styles.TextInput}
-                        placeholder="What should we call you?"
-                    />
-                </View>
-                <View style={styles.formRow}>
-                    <Text style={styles.formRowText}>Email</Text>
-                    <TextInput
-                        style={styles.TextInput}
-                        placeholder="A valid email address"
-                    />
-                </View>
-                <View style={styles.formRow}>
-                    <Text style={styles.formRowText}>Password</Text>
-                    <TextInput
-                        secureTextEntry={true}
-                        style={styles.TextInput}
-                        placeholder="Your strongest password"
-                    />
-                </View>
-                <View style={styles.formRow}>
-                    <TouchableOpacity style={{
-                        alignItems: "center",
-                        backgroundColor: "#57B288",
-                        padding: 10,
-                        marginBottom: 20
+            <View>
+                <View style={{ display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 40 }}>
+                    <View style={{
+                        marginRight: 20,
+                        padding: 20,
+                        borderWidth: 1,
+                        borderRadius: 15,
+                        borderColor: "#57B288"
                     }}>
-                        <Text style={{ color: "white" }}>Upload profile picture</Text>
+                        <Text style={{ color: "white", fontSize: 20 }}>Let's get started</Text>
+                        <Text style={{ color: "white", fontSize: 20 }}>on your profile!</Text>
+                    </View>
+                    <Image style={{ width: 100, height: 108 }} source={require("../assets/mergebot.png")} />
+                </View>
+                <View>
+                    <View style={styles.field}>
+                        <Image style={styles.fieldImage} source={require("../assets/username.svg")} />
+                        <TextInput
+                            onChangeText={text => params.setUsername(text)}
+                            style={styles.fieldTextInput}
+                            placeholder="Username"
+                        />
+                    </View>
+                </View>
+                <View>
+                    <View style={styles.field}>
+                        <Image style={styles.fieldImage} source={require("../assets/email.svg")} />
+                        <TextInput
+                            style={styles.fieldTextInput}
+                            placeholder="Email"
+                        />
+                    </View>
+                </View>
+                <View>
+                    <View style={styles.field}>
+                        <Image style={styles.fieldImage} source={require("../assets/password.svg")} />
+                        <TextInput
+                            secureTextEntry={true}
+                            style={styles.fieldTextInput}
+                            placeholder="Password"
+                        />
+                    </View>
+                </View>
+                <View>
+                    <TouchableOpacity style={{
+                        backgroundColor: "#57B288",
+                        paddingVertical: 15,
+                        marginTop: 10,
+                        marginBottom: 30,
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}>
+                        <Image style={{ width: 24, height: 24, marginRight: 10 }} source={require("../assets/upload.svg")} />
+                        <Text style={{ color: "white", fontWeight: "bold" }}>Upload profile picture</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={styles.formRow}>
-                    <Text style={styles.formRowText}>Add a bio</Text>
+                <View>
                     <TextInput
-                        style={styles.TextInput}
+                        style={styles.bio}
                         multiline={true}
                         numberOfLines={4}
-                        placeholder="Say something about yourself"
+                        placeholder="Bio (optional)"
                     />
                 </View>
-            </View>
-            <View style={styles.bottomBar}>
                 <TouchableOpacity
-                    style={{
-                        alignItems: "center",
-                        backgroundColor: "#57B288",
-                        padding: 10
-                    }}
+                    style={styles.navButton}
                     onPress={() => { navigation.navigate("Start2 Screen") }}
                 >
-                    <Text>Next</Text>
+                    <Text style={styles.navButtonText}>Next</Text>
+                    <Image style={styles.navButtonImage} source={require("../assets/arrow_right.svg")} />
                 </TouchableOpacity>
             </View>
         </View>
@@ -74,31 +90,48 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: "#222222",
-        paddingVertical: 20
+        padding: 20
     },
-    TextInput: {
-        backgroundColor: 'white',
-        padding: 20,
-        borderRadius: 10,
-        marginBottom: 20
-    },
-    formRow: {
-    },
-    formRowText: {
-        color: "white",
-        marginBottom: 5
-    },
-    formWrapper: {
-        flexGrow: 1
-    },
-    bottomBar: {
-        flexGrow: 0,
+    field: {
         display: "flex",
-        justifyContent: "flex-end"
-    },
-    button: {
+        flexDirection: "row",
         alignItems: "center",
-        backgroundColor: "#57B288",
-        padding: 10
+        backgroundColor: "#E7E7E7",
+        borderRadius: 50,
+        marginBottom: 20,
+    },
+    fieldImage: {
+        width: 24,
+        height: 24,
+        marginLeft: 20,
+    },
+    fieldTextInput: {
+        padding: 15,
+        fontSize: 14,
+        outlineStyle: "none",
+    },
+    bio: {
+        backgroundColor: '#E7E7E7',
+        padding: 20,
+        outlineStyle: "none",
+        borderRadius: 10,
+    },
+    navButton: {
+        alignSelf: "end",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 40
+    },
+    navButtonText: {
+        color: "#57B288",
+        fontWeight: "bold",
+        fontSize: 20
+    },
+    navButtonImage: {
+        marginLeft: 15,
+        width: 9,
+        height: 16
     }
 });
