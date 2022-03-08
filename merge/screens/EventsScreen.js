@@ -7,6 +7,8 @@ import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
 import ListedEvent from '../components/Event/ListedEvent';
 import CreateEventButton from '../components/Event/CreateEventButton';
+import DividerWithText from '../components/Divider/DividerWithText';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function EventsScreen({ route, navigation}) {
     const params = route.params;
@@ -15,6 +17,14 @@ export default function EventsScreen({ route, navigation}) {
         <View style={styles.container}>
           <TopBar title="My Events" desc="View your gaming schedule"/>
           <CreateEventButton />
+          <DividerWithText text="Upcoming Events" />
+          <ListedEvent />
+          <ListedEvent />
+          <DividerWithText text="Current Events" />
+          <ListedEvent />
+          <ListedEvent />
+          <DividerWithText text="Previous Events" />
+          <ListedEvent />
           <ListedEvent />
         </View>
     );

@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       padding: 10,
       position: 'relative',
-      top: 95
+      top: 95,
     },
     mainBox: {
       width: '80%',

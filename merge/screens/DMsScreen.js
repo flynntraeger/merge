@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
 import MessageHeader from '../components/MessageHeader/MessageHeader';
 import { SearchBar } from 'react-native-elements';
-import { Divider } from 'react-native-paper';
 
 const profiles = require('../components/Profile/profiles.json')
 
