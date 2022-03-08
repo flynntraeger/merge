@@ -5,6 +5,7 @@ import DirectMessage from '../components/DirectMessage/DirectMessage';
 import GameInvite from '../components/GameInvite/GameInvite';
 import GameCard from '../components/GameCard/GameCard';
 import UserCard from '../components/UserCard/UserCard';
+import ListedEvent from '../components/Event/ListedEvent';
 
 export default function EventsScreen({ route, navigation}) {
     const params = route.params;
@@ -12,7 +13,7 @@ export default function EventsScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Events" desc="View your gaming schedule"/>
-          <Text style={{color: "#ffffff"}}> Testing Events Screen </Text>
+          <ListedEvent />
         </View>
     );
 }
