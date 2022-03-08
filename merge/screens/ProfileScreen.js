@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
 import DirectMessage from '../components/DirectMessage/DirectMessage';
 import GameInvite from '../components/GameInvite/GameInvite';
@@ -17,6 +17,7 @@ export default function ProfileScreen({ route, navigation}) {
     const [index, setIndex] = React.useState(0);
     return (
         <View style={styles.container}>
+          <ScrollView style={styles.scroll}>
             <ProfileHeader />
             <ProfileTopBox username={"CodewordPickle"}/>
             <View style={styles.tabCont}>
@@ -57,7 +58,7 @@ export default function ProfileScreen({ route, navigation}) {
             {index === 1 ? <Text>hello</Text> : null}
             {index === 2 ? <Text>world</Text> : null}
             </View>
-
+            </ScrollView>
             </View>
     );
 } 
@@ -90,7 +91,8 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    overflow: "hidden"
+    overflow: "hidden",
+    marginTop: 5
   },
   pageCont: {
     width:"95%",
@@ -107,6 +109,8 @@ const styles = StyleSheet.create({
   },
   subHeader: {
     color: "white"
-
+  },
+  scroll: {
+    width:"95%"
   }
 });
