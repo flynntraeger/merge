@@ -19,6 +19,7 @@ export default function ProfileScreen({ route, navigation}) {
         <View style={styles.container}>
           <ScrollView style={styles.scroll}>
             <ProfileHeader />
+            <View style={styles.body}>
             <ProfileTopBox username={"CodewordPickle"}/>
             <View style={styles.tabCont}>
               <Button title="Games" containerStyle={index === 0 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
@@ -57,6 +58,7 @@ export default function ProfileScreen({ route, navigation}) {
             : null}
             {index === 1 ? <Text>hello</Text> : null}
             {index === 2 ? <Text>world</Text> : null}
+            </View>
             </View>
             </ScrollView>
             </View>
@@ -111,6 +113,12 @@ const styles = StyleSheet.create({
     color: "white"
   },
   scroll: {
-    width:"95%"
+    width:"100%",
+  },
+  body: {
+    width:"100%",
+    alignItems: "center",
+    marginTop: 190,
+    marginBottom: 90
   }
 });
