@@ -1,0 +1,50 @@
+{
+    "Minecraft" : {
+        "imgurl": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+        "price": 30
+    },
+    "Omori" : {
+        "imgurl": "https://www.destructoid.com/wp-content/uploads/2021/05/621192-actual-header.jpg",
+        "price": 20
+    },
+    "Valorant" : {
+        "imgurl": "https://www.riotgames.com/darkroom/1000/d0807e131a84f2e42c7a303bda672789:5f9cc29dd5d2a50bb1a8ea2efbc97abb/valorant-offwhitelaunch-keyart.jpg",
+        "price": 0
+    }, 
+    "Among Us" : {
+        "imgurl": "https://i.guim.co.uk/img/media/8e1c47f335ca95cb59c05a8a2355056279c61887/13_0_1200_720/master/1200.jpg?width=1200&quality=85&auto=format&fit=max&s=da52e19134afd1fa60981e1e6638fc07",
+        "price": 5
+    }, 
+    "Borderlands 3" : {
+        "imgurl": "https://upload.wikimedia.org/wikipedia/en/2/21/Borderlands_3_cover_art.jpg",
+        "price": 60
+    }, 
+    "Fall Guys" : {
+        "imgurl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Fall_Guys_cover.jpg",
+        "price": 20
+    }, 
+    "Genshin" : {
+        "imgurl": "https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2020/09/30/26b53ef6-0237-11eb-88c7-25dcd0ae6080_image_hires_051230.JPG?itok=gKu8RgUe&v=1601413957",
+        "price": 0
+    },  
+    "Haven" : {
+        "imgurl": "https://upload.wikimedia.org/wikipedia/en/6/63/Haven_Steam_cover_artwork.jpg",
+        "price": 0
+    }, 
+    "Phasmo" : {
+        "imgurl": "https://www.gamingdragons.com/images/game_img/phasmophobia.jpg",
+        "price": 14
+    }, 
+    "Slime Rancher" : {
+        "imgurl": "https://image.api.playstation.com/vulcan/img/cfn/11307NUlRPcxCgzizu6gpFZiR_WIqYHV9W0G8obBn0J1qCXY-SjbkzKihVNA3WzUQHbD08zWVaN-a7U5--t57lc-gckkQ0f-.png",
+        "price": 20
+    }, 
+    "Stardew Valley" : {
+        "imgurl": "https://media.wired.com/photos/6083abad184723fc1784dc38/master/pass/games_stardew.jpg",
+        "price": 15
+    },
+    "TemTem" : {
+        "imgurl": "https://assets-prd.ignimgs.com/2021/12/21/temtem-button-fin-1640046905555.jpg",
+        "price": 42
+    }
+}

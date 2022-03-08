@@ -12,7 +12,10 @@ import ProfileTopBox from '../components/Profile/ProfileTopBox';
 import { Tab, TabView,Button } from 'react-native-elements';
 import { LogOut } from 'react-native-feather';
 
-export default function ProfileScreen({ route, navigation}) {
+const profiles = require('../components/Profile/profiles.json')
+const games = require('../components/Games/games.json')
+
+export default function ProfileScreen({ route, navigation}, username) {
     const params = route.params;
     const [index, setIndex] = React.useState(0);
     return (
@@ -20,19 +23,16 @@ export default function ProfileScreen({ route, navigation}) {
           <ScrollView style={styles.scroll}>
             <ProfileHeader />
             <View style={styles.body}>
-            <ProfileTopBox username={"CodewordPickle"}/>
+            <ProfileTopBox username={params.username}/>
             <View style={styles.tabCont}>
               <Button title="Games" containerStyle={index === 0 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
                 setIndex(0);
-                console.log(index);
               }}/>
               <Button title="Schedule" containerStyle={index === 1 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
                 setIndex(1);
-                console.log(index);
               }}/>
               <Button title="Bonds" containerStyle={index === 2 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
                 setIndex(2);
-                console.log(index);
               }}/>
             </View>
 
@@ -41,23 +41,53 @@ export default function ProfileScreen({ route, navigation}) {
               <View>
                 <Text style={styles.subHeader}>Pinned:</Text>
                 <View style={styles.gameRow}>
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  {profiles[params.username].pinnedGames.map((item, index) => {
+                    return (<GameCard
+                      key={index}
+                      game={item}
+                      picURL={games[item].imgurl}
+                    />)
+                  })}
                 </View>
                 <Text style={styles.subHeader}>All Owned:</Text>
                 <View style={styles.gameRow}>
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
-                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  {profiles[params.username].allGames.map((item, index) => {
+                    return (<GameCard
+                      key={index}
+                      game={item}
+                      picURL={games[item].imgurl}
+                    />)
+                  })}
                 </View>
               </View>
             : null}
-            {index === 1 ? <Text>hello</Text> : null}
-            {index === 2 ? <Text>world</Text> : null}
+            {index === 1 ? <Text style={styles.subHeader}>[add schedule here]</Text> : null}
+            {index === 2 ? 
+              <View>
+                <Text style={styles.subHeader}>Starred:</Text>
+                <View style={styles.gameRow}>
+                  {profiles[params.username].bonds.filter((item)=> item.starred === true).map((item, index) => {
+                    return (<UserCard
+                      key={index}
+                      username={item.username}
+                      level={item.level}
+                      progress={item.experience}
+                      picURL={profiles[item.username].imgurl}
+                    />)
+                  })}
+                </View>
+                <View style={styles.userRow}>
+                  <Button
+                    title={"View My Network"}
+                    buttonStyle={styles.bottomButton}
+                  />
+                  <Button
+                    title={"View All Bonds"}
+                    buttonStyle={styles.bottomButton}
+                  />
+                </View>
+              </View>
+            : null}
             </View>
             </View>
             </ScrollView>
@@ -109,6 +139,12 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "space-evenly"
   },
+  userRow: {
+    marginVertical: 15,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-evenly"
+  },
   subHeader: {
     color: "white"
   },
@@ -120,5 +156,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 170,
     marginBottom: 90
-  }
+  },
+  bottomButton: {
+    backgroundColor: "#57B288",
+    borderRadius: 10,
+  },
 });

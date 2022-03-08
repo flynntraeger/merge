@@ -31,7 +31,7 @@ export default function NavBar(props) {
             <Button 
                 icon={<User stroke="white" width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={()=>navigation.navigate("Profile Screen")}
+                onPress={()=>navigation.navigate("Profile Screen", {username : "CodewordPickle"})}
             />
         </View>
     );

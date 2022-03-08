@@ -106,6 +106,28 @@
         "imgurl": "https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3",
         "favGen": ["Open World", "Indie", "Gacha", "FPS"],
         "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
+        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
+        "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
+        "bonds": [
+            {
+                "username": "Naftyy",
+                "level": 17,
+                "experience": 0.2,
+                "starred": true
+            },
+            {
+                "username": "TurtleDuck",
+                "level": 15,
+                "experience": 0.76,
+                "starred": true
+            },
+            {
+                "username": "Al_x_9",
+                "level": 12,
+                "experience": 0.5,
+                "starred": true
+            }
+        ],
         "messages_with": ["user"]
     },
     "Rashlasher": {
