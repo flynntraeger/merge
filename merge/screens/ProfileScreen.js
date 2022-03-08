@@ -9,7 +9,8 @@ import UserCard from '../components/UserCard/UserCard';
 import SendMessageBar from '../components/DirectMessage/SendMessageBar';
 import ProfileHeader from '../components/Profile/ProfileHeader';
 import ProfileTopBox from '../components/Profile/ProfileTopBox';
-import { Tab, TabView } from 'react-native-elements';
+import { Tab, TabView,Button } from 'react-native-elements';
+import { LogOut } from 'react-native-feather';
 
 export default function ProfileScreen({ route, navigation}) {
     const params = route.params;
@@ -19,48 +20,45 @@ export default function ProfileScreen({ route, navigation}) {
             <ProfileHeader />
             <ProfileTopBox username={"CodewordPickle"}/>
             <View style={styles.tabCont}>
-              <Tab
-                value={index}
-                onChange={(e) => setIndex(e)}
-                indicatorStyle={{
-                  backgroundColor: '#57B288',
-                  height: 2,
-                }}
-              >
-                <Tab.Item
-                  title="Games"
-                  buttonStyle={{backgroundColor:'#353535', borderTopLeftRadius: 10}}
-                  titleStyle={styles.tabTitle}
-                />
-                <Tab.Item
-                  title="Schedule"
-                  buttonStyle={{backgroundColor:'#353535'}}
-                  titleStyle={styles.tabTitle}
-                />
-                <Tab.Item
-                  title="Bonds"
-                  buttonStyle={{backgroundColor:'#353535', borderTopRightRadius: 10}}
-                  titleStyle={styles.tabTitle}
-                />
-              </Tab>
+              <Button title="Games" containerStyle={index === 0 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
+                setIndex(0);
+                console.log(index);
+              }}/>
+              <Button title="Schedule" containerStyle={index === 1 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
+                setIndex(1);
+                console.log(index);
+              }}/>
+              <Button title="Bonds" containerStyle={index === 2 ? styles.buttonContActive: styles.buttonContDefault} buttonStyle={styles.button} onPress={() => {
+                setIndex(2);
+                console.log(index);
+              }}/>
             </View>
+
             <View style={styles.pageCont}>
-              <TabView value={index} onChange={setIndex} animationType="timing">
-                <TabView.Item style={{ backgroundColor:'#353535', width: '100%' }}>
-                  <View style={styles.pageSubCont}>
-                    <Text>Pinned:</Text>
-                    <Text>All Owned:</Text>
-                  </View>
-                </TabView.Item>
-                <TabView.Item style={{ backgroundColor:'#353535', width: '100%' }}>
-                  <Text>More Stuff</Text>
-                </TabView.Item>
-                <TabView.Item style={{backgroundColor:'#353535', width: '100%' }}>
-                  <Text>And More Stuff</Text>
-                </TabView.Item>
-              </TabView>
+            {index === 0 ? 
+              <View>
+                <Text style={styles.subHeader}>Pinned:</Text>
+                <View style={styles.gameRow}>
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                </View>
+                <Text style={styles.subHeader}>All Owned:</Text>
+                <View style={styles.gameRow}>
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                  <GameCard game="Minecraft" picURL="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" />
+                </View>
+              </View>
+            : null}
+            {index === 1 ? <Text>hello</Text> : null}
+            {index === 2 ? <Text>world</Text> : null}
             </View>
-        </View>
+
+            </View>
     );
 } 
 
@@ -71,30 +69,44 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: "#222222"
   },
-  tabTitle: {
-    color: "white",
-    textTransform: "capitalize"
+  button: {
+    backgroundColor: "#353535",
+    borderRadius: 0,
   },
-  tabBox: {
-    backgroundColor:'#353535'
+  buttonContActive: {
+    flex: 1,
+    backgroundColor: "#353535",
+    borderRadius: 0,
+    borderBottomWidth: 2,
+    borderColor: "#57B288"
+  },
+  buttonContDefault: {
+    flex: 1,
+    backgroundColor: "#353535",
+    borderRadius: 0
   },
   tabCont: {
     width:"95%",
+    flexDirection:"row",
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    overflow:"hidden",
-    marginTop: 15
+    overflow: "hidden"
   },
   pageCont: {
     width:"95%",
-    height:"30%",
-    overflow: "hidden"
+    backgroundColor:"#353535",
+    padding: 15,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10
   },
-  pageSubCont: {
-    flex: 1,
-    margin: 15,
-    flexDirection:"column",
-    backgroundColor: "red"
+  gameRow: {
+    marginVertical: 15,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-evenly"
+  },
+  subHeader: {
+    color: "white"
 
   }
 });

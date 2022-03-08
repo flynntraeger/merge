@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     container: {
       width: 100,
       flexDirection:"column",
-      justifyContent: "flex-start"
+      justifyContent: "flex-start",
+      marginBottom: 15
     },
     image: {
         width: "100%"
