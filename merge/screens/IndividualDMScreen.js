@@ -18,7 +18,7 @@ export default function IndividualDMScreen({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <TopBar backButton={true} navigationPiece={navigation} title={params.username} desc={"Bond Level " + params.level} />
+      <TopBar backButton={true} prevPage={"DMs Screen"} navigationPiece={navigation} title={params.username} desc={"Bond Level " + params.level} />
       <ScrollView contentContainerStyle={styles.scrollView}>
         {profiles.user.messages_with[params.username].messages.map((item, index) => {
           return ( index === 4 ?

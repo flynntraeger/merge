@@ -16,7 +16,7 @@ class TopBar extends React.Component {
             <Button
               icon={<ChevronLeft stroke="#ffffff" width={25} height={30} />}
               buttonStyle={styles.iconButton}
-              onPress={() => this.props.navigationPiece.navigate('DMs Screen')
+              onPress={() => this.props.navigationPiece.navigate(this.props.prevPage, {username: this.props.username})
               }
             />
             <Text style={styles.title}>{this.props.title}</Text>

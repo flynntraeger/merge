@@ -11,6 +11,7 @@ import IndividualDMScreen from './screens/IndividualDMScreen';
 import DMsScreen from './screens/DMsScreen';
 import EventsScreen from './screens/EventsScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import BondsScreen from './screens/BondsScreen';
 import Start1Screen from './screens/Start1Screen';
 import Start2Screen from './screens/Start2Screen';
 import Start3Screen from './screens/Start3Screen';
@@ -49,6 +50,7 @@ export default class App extends React.Component {
                     <Stack.Screen name="DMs Screen" component={DMsScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Events Screen" component={EventsScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Profile Screen" component={ProfileScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="Bonds Screen" component={BondsScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Individual Message Screen" component={IndividualDMScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Create Event Screen" component={CreateEventScreen} options={{ headerShown: false }} />
                 </Stack.Navigator>

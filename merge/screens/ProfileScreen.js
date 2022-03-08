@@ -80,10 +80,12 @@ export default function ProfileScreen({ route, navigation}, username) {
                   <Button
                     title={"View My Network"}
                     buttonStyle={styles.bottomButton}
+                    onPress={()=> navigation.navigate("Home Screen")}
                   />
                   <Button
                     title={"View All Bonds"}
                     buttonStyle={styles.bottomButton}
+                    onPress={()=> navigation.navigate("Bonds Screen", {username: params.username})}
                   />
                 </View>
               </View>
