@@ -2,7 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function NavBar(props) {
+//Update this to use this.props.eventTitle / Time / numInvites / topGame 
+
+export default function ListedEvent(props) {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
@@ -25,6 +27,8 @@ const styles = StyleSheet.create({
       flexDirection:"row",
       justifyContent: 'center',
       padding: 10,
+      position: 'relative',
+      top: 95
     },
     mainBox: {
       width: '80%',
@@ -41,19 +45,16 @@ const styles = StyleSheet.create({
     },
     leftBoxText: {
         color: '#FFFFFF',
-        fontFamily: 'Manrope',
         fontSize: 24,
         fontWeight: 'bold'
     },
     mainBoxTopText: {
       color: '#9DD2B9',
-      fontFamily: 'Manrope',
       fontSize: 19,
       paddingBottom: 5
     },
     mainBoxBotText: {
         color: '#BBBBBB',
-        fontFamily: 'Manrope',
         fontSize: 17,
         paddingTop: 5
     }
