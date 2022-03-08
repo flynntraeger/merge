@@ -41,17 +41,16 @@ const styles = StyleSheet.create({
     },
     banner: {
         width: '100%',
-        height: '92%',
+        height: '88%',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: 50
+        paddingTop: 40
     },
     badge: {
         position: 'absolute',
-        top: '79%',
+        top: '76%',
         left: '61%',
-        //scaleX: 2,
-        //scaleY: 2,
+        transform: [{ scale: 2}],
         backgroundColor: "#95cf97",
         borderWidth: 1,
         borderColor: "black",
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
         width: 25,
         height: 25,
         position: 'absolute',
-        top: '78%',
+        top: '75%',
         left: '60.6%'
     }
   });
