@@ -10,6 +10,10 @@ class GameInvite extends React.Component {
     }
   }
 
+  hideOptions = () => {
+      this.props.setInvite(false)
+  }
+
   render() {
     return (
         <View style={styles.container}>
@@ -23,7 +27,8 @@ class GameInvite extends React.Component {
                         buttonStyle={styles.button}
                         titleStyle={styles.buttonText}
                         title="Accept"
-                        onPress={()=> { this.props.handler(true);
+                        onPress={()=> {
+                            this.hideOptions;
                             this.setState({active: false});}}
                     />
                     <Button
@@ -31,7 +36,8 @@ class GameInvite extends React.Component {
                         buttonStyle={styles.button}
                         titleStyle={styles.buttonText}
                         title="Reject"
-                        onPress={()=> this.setState({active: false})}
+                        onPress={()=> { this.hideOptions;
+                            this.setState({active: false});}}
                     />
                 </View>
             :null}
