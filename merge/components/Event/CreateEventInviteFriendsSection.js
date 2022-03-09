@@ -47,8 +47,8 @@ export default function CreateEventInviteFriendsSection() {
                 selectionColor='#888888'
             />
             <View style={styles.bottomTextWrap}>
-                <Text style={styles.bottomText}> Currently added: {nameOne}{nameTwo}</Text> 
-                {overTwo && <Text style={styles.bottomText}>, and {numOtherFriends} more ...</Text>} 
+                <Text style={styles.bottomText}>Currently added: {nameOne}{nameTwo}</Text> 
+                {overTwo && <Text style={styles.bottomText}>, and {numOtherFriends} more...</Text>} 
             </View>
         </View>
     );
