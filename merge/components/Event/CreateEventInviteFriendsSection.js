@@ -7,12 +7,7 @@ import { useState, useEffect } from 'react';
 //Technically this needs added functionality to actually fetch usernames in system and display added,
 //currently hardcoded
 
-export default function CreateEventInviteFriendsSection() {
-    const [searchText, setSearchText] = useState("");
-    const [nameOne, setNameOne] = useState("");
-    const [nameTwo, setNameTwo] = useState("");
-    const [numOtherFriends, setNumOtherFriends] = useState(0);
-    const [overTwo, setOverTwo] = useState(false);
+export default function CreateEventInviteFriendsSection({searchText, setSearchText, nameOne, setNameOne, nameTwo, setNameTwo, numOtherFriends, setNumOtherFriends, overTwo, setOverTwo}) {
 
     function setNames(name) {
         if (nameOne=="") {

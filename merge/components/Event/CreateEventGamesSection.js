@@ -5,26 +5,18 @@ import { SearchBar } from 'react-native-elements';
 import { useState, useEffect } from 'react';
 import GameCard from '../GameCard/GameCard';
 
-//Technically this needs added functionality to actually fetch usernames in system and display added,
-//currently hardcoded
+export default function CreateEventGamesSection({searchGameText, setSearchGameText, gameOne, setGameOne, gameTwo, setGameTwo, numOtherGames, setNumOtherGames, overTwoGames, setOverTwoGames}) {
 
-export default function CreateEventGamesSection() {
-    const [searchText, setSearchText] = useState("");
-    const [nameOne, setNameOne] = useState("");
-    const [nameTwo, setNameTwo] = useState("");
-    const [numOtherFriends, setNumOtherFriends] = useState(0);
-    const [overTwo, setOverTwo] = useState(false);
-
-    function setNames(name) {
-        if (nameOne=="") {
-            setNameOne(name);
+    function setGames(game) {
+        if (gameOne=="") {
+            setGameOne(game);
         }
-        else if (nameTwo=="") {
-            setNameTwo(', ' + name);
+        else if (gameTwo=="") {
+            setGameTwo(', ' + game);
         }
         else {
-            setOverTwo(true);
-            setNumOtherFriends(numOtherFriends + 1);
+            setOverTwoGames(true);
+            setNumOtherGames(numOtherGames + 1);
         }
     }
 
@@ -37,9 +29,9 @@ export default function CreateEventGamesSection() {
                 containerStyle={styles.searchBarContainer}
                 inputContainerStyle={styles.searchBarTextArea}
                 placeholder="Search by title..."
-                onChangeText={(value) => setSearchText(value)}
-                onClear={() => setNames(searchText)}
-                value={searchText}
+                onChangeText={(value) => setSearchGameText(value)}
+                onClear={() => setGames(searchGameText)}
+                value={searchGameText}
                 inputStyle={styles.searchBarText}
                 searchIcon={{ color: "#888888" }}
                 clearIcon={{ color: "#888888" }}
@@ -48,8 +40,8 @@ export default function CreateEventGamesSection() {
                 selectionColor='#888888'
             />
             <View style={styles.bottomTextWrap}>
-                <Text style={styles.bottomText}>Currently added: {nameOne}{nameTwo}</Text> 
-                {overTwo && <Text style={styles.bottomText}>, and {numOtherFriends} more...</Text>} 
+                <Text style={styles.bottomText}>Currently added: {gameOne}{gameTwo}</Text> 
+                {overTwoGames && <Text style={styles.bottomText}>, and {numOtherGames} more...</Text>} 
             </View>
             <Text style={styles.bottomText}>Recommended: </Text>
             <View style={styles.gameRow}>

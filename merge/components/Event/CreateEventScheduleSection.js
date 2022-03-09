@@ -2,9 +2,7 @@ import React from 'react';
 import { View, StyleSheet, TextInput, Text} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function CreateEventScheduleSection() {
-    const [typedDateText, onChangeDateText] = React.useState("");
-    const [typedTimeText, onChangeTimeText] = React.useState("");
+export default function CreateEventScheduleSection({typedDateText, onChangeDateText, typedTimeText, onChangeTimeText}) {
 
     return (
         <View style={styles.container}>
