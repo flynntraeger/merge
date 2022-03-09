@@ -2,19 +2,19 @@ import React from 'react';
 import { View, Text, StyleSheet} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-//Update this to use this.props.eventTitle / Time / numInvites / topGame 
+//Probably update this to use locally stored data like with the users
 
 export default function ListedEvent(props) {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
             <View style={styles.leftBox}>
-                <Text style={styles.leftBoxText}> Feb </Text>
-                <Text style={styles.leftBoxText}> 18 </Text>
+                <Text style={styles.leftBoxText}> {props.month} </Text>
+                <Text style={styles.leftBoxText}> {props.day} </Text>
             </View>
             <View style={styles.mainBox}>
-                <Text style={styles.mainBoxTopText}> Among Us, Jackbox, more!!! </Text>
-                <Text style={styles.mainBoxBotText}> @6:00PM | 8 invites | Among Us </Text>
+                <Text style={styles.mainBoxTopText}> {props.eventTitle} </Text>
+                <Text style={styles.mainBoxBotText}> @{props.time} | {props.numInvites} inv. | {props.topGame} </Text>
             </View>
         </View>
     );

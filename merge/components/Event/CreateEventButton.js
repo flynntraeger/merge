@@ -21,11 +21,10 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       borderRadius: 30,
       position: 'absolute',
-      top: 110,
+      top: 25,
       fontSize: 26
     },
     buttonText: {
-      fontFamily: 'Manrope',
       fontSize: 26
     }
   });
