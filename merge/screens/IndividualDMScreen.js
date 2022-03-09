@@ -15,6 +15,7 @@ export default function IndividualDMScreen({ route, navigation }) {
   const [showMessage, onChangeShow] = React.useState(false);
 
   const [stateProfiles, updateMessages] = React.useState(profiles);
+  const [showInvite, setInvite] = React.useState(true);
 
   profiles.user.messages_with[params.username].newMessages = 0;
 
@@ -24,7 +25,7 @@ export default function IndividualDMScreen({ route, navigation }) {
       <ScrollView contentContainerStyle={styles.scrollView}>
         {stateProfiles.user.messages_with[params.username].messages.map((item, index) => {
           return ( index === 4 ?
-            <GameInvite key={index} username={params.username} game="Minecraft" time="5:00PM" date="Feb 4" active ={true}/>
+            <GameInvite key={index} username={params.username} game="Minecraft" time="5:00PM" date="Feb 4" setInvite={(setInvite) => { setInvite(false); }} active={showInvite}/>
             :
             <DirectMessage
                 key={index}
