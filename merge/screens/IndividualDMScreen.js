@@ -15,12 +15,15 @@ export default function IndividualDMScreen({ route, navigation }) {
 
   const [showMessage, onChangeShow] = React.useState(false);
   const [showInvite, onChangeInvite] = React.useState(true);
+  const [newMessageToAdd, addNewMessage] = React.useState("");
+
+  const [stateProfiles, updateMessages] = React.useState(profiles);
 
   return (
     <View style={styles.container}>
       <TopBar backButton={true} prevPage={"DMs Screen"} navigationPiece={navigation} title={params.username} desc={"Bond Level " + params.level} />
       <ScrollView contentContainerStyle={styles.scrollView}>
-        {profiles.user.messages_with[params.username].messages.map((item, index) => {
+        {stateProfiles.user.messages_with[params.username].messages.map((item, index) => {
           return ( index === 4 ?
             <GameInvite key={index} username={params.username} game="Minecraft" time="5:00PM" date="Feb 4" active ={true} handler={onChangeInvite}/>
             :
@@ -29,17 +32,17 @@ export default function IndividualDMScreen({ route, navigation }) {
                 username={item.sender}
                 timestamp={item.time}
                 message={item.message}
-                picURL={profiles[item.sender].imgurl}
+                picURL={stateProfiles[item.sender].imgurl}
             />
           );
         })}
         {
           showMessage ? 
           <DirectMessage
-            username={"CodewordPickle"}
+            username={stateProfiles.user.uname}
             timestamp={"Today @ 11:21AM"}
-            message={"Hi there!"}
-            picURL={profiles.user.imgurl}
+            message={newMessageToAdd}
+            picURL={stateProfiles.user.imgurl}
           />
           : null
         }
@@ -47,7 +50,10 @@ export default function IndividualDMScreen({ route, navigation }) {
       <SendMessageBar showMessage={showMessage}
         onChangeShow={(newShow) => {
           onChangeShow(newShow);
-        }}/>
+        }}
+        newMessage={(messageToAdd) => {
+          addNewMessage(messageToAdd);
+        }} />
     </View>
   );
 }

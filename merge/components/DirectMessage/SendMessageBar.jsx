@@ -6,9 +6,10 @@ import { useNavigation } from '@react-navigation/native';
 
 const profiles = require('../../components/Profile/profiles.json');
 
-export default function SendMessageBar({showMessage, onChangeShow}) {
+export default function SendMessageBar({showMessage, onChangeShow, newMessage}) {
     const [typedText, onChangeText] = React.useState("");
-
+    const [stateProfiles, updateMessages] = React.useState(profiles);
+    console.log(typedText)
     return (
         <View style={styles.container}>
             <Button 
@@ -30,8 +31,7 @@ export default function SendMessageBar({showMessage, onChangeShow}) {
             <Button 
                 icon={<ArrowRightCircle stroke='#57b288' width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={(param) => {onChangeShow(param); onChangeText("");}}
-                    
+                onPress={(param) => {onChangeShow(param); onChangeText(""); newMessage(typedText)}}
             />
         </View>
     );

@@ -31,7 +31,6 @@ class UserProfile extends React.Component {
                 <Text style={styles.aboutUser}>
                     {profiles.flynn.aboutUser ? profiles.flynn.aboutUser : 'No details added.'}
                 </Text>
-
                 {/* {games.map((item) => (
                     <GameCard key={item.id} item={item} />
                     ))} */}
