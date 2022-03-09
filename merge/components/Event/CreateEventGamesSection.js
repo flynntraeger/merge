@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 //Technically this needs added functionality to actually fetch usernames in system and display added,
 //currently hardcoded
 
-export default function CreateEventInviteFriendsSection() {
+export default function CreateEventGamesSection() {
     const [searchText, setSearchText] = useState("");
     const [nameOne, setNameOne] = useState("");
     const [nameTwo, setNameTwo] = useState("");
@@ -30,12 +30,12 @@ export default function CreateEventInviteFriendsSection() {
     return (
         <View style={styles.container}>
             <Text style={styles.sectionText}>
-                Invite Friends!
+                Add some games!
             </Text>
             <SearchBar
                 containerStyle={styles.searchBarContainer}
                 inputContainerStyle={styles.searchBarTextArea}
-                placeholder="Search by username..."
+                placeholder="Search by title..."
                 onChangeText={(value) => setSearchText(value)}
                 onClear={() => setNames(searchText)}
                 value={searchText}
@@ -50,6 +50,7 @@ export default function CreateEventInviteFriendsSection() {
                 <Text style={styles.bottomText}>Currently added: {nameOne}{nameTwo}</Text> 
                 {overTwo && <Text style={styles.bottomText}>, and {numOtherFriends} more...</Text>} 
             </View>
+            <Text style={styles.bottomText}>Recommended: </Text>
         </View>
     );
 }
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     container: {
       width: "100%",
       position: "absolute",
-      top: 165,
+      top: 500,
       flexDirection:"column",
       justifyContent: "center",
       paddingHorizontal: 25,

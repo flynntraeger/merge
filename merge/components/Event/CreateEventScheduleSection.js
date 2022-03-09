@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     container: {
       width: "100%",
       position: "absolute",
-      top: '50.5%',
+      top: 325,
       flexDirection:"column",
       justifyContent: "space-between",
       paddingHorizontal: 25,

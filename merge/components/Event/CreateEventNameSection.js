@@ -3,7 +3,7 @@ import { View, StyleSheet, TextInput, Text} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export default function CreateEventNameSection() {
-    const [typedText, onChangeText] = React.useState("");
+    const [typedText, onChangeText,] = React.useState("");
 
     return (
         <View style={styles.container}>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     container: {
       width: "100%",
       position: "absolute",
-      top: '15%',
+      top: 35,
       flexDirection:"column",
       justifyContent: "space-between",
       paddingHorizontal: 25,
