@@ -30,7 +30,8 @@ export default function CreateEventGamesSection({searchGameText, setSearchGameTe
                 inputContainerStyle={styles.searchBarTextArea}
                 placeholder="Search by title..."
                 onChangeText={(value) => setSearchGameText(value)}
-                onClear={() => setGames(searchGameText)}
+                onSubmitEditing={() => {setGames(searchGameText); setSearchGameText("");}}
+                onClear={() => setSearchGameText("")}
                 value={searchGameText}
                 inputStyle={styles.searchBarText}
                 searchIcon={{ color: "#888888" }}
@@ -40,10 +41,10 @@ export default function CreateEventGamesSection({searchGameText, setSearchGameTe
                 selectionColor='#888888'
             />
             <View style={styles.bottomTextWrap}>
-                <Text style={styles.bottomText}>Currently added: {gameOne}{gameTwo}</Text> 
+                <Text style={styles.bottomText}>  Currently added: {gameOne}{gameTwo}</Text> 
                 {overTwoGames && <Text style={styles.bottomText}>, and {numOtherGames} more...</Text>} 
             </View>
-            <Text style={styles.bottomText}>Recommended: </Text>
+            <Text style={styles.bottomText}>  Recommended: </Text>
             <View style={styles.gameRow}>
               <GameCard
                 game={"Valorant"}
@@ -99,12 +100,15 @@ const styles = StyleSheet.create({
         color: '#888888'
     },
     bottomTextWrap: {
-      flexDirection: 'row'
+      flexDirection: 'row',
+      paddingBottom: 5
     },
     gameRow: {
-      marginVertical: 15,
+      paddingTop: 5,
+      paddingBottom: 0,
       flexDirection: "row",
       flexWrap: "wrap",
-      justifyContent: "space-evenly"
+      justifyContent: "space-evenly",
+      alignItems: 'center'
     }
   });
