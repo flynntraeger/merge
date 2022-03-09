@@ -32,7 +32,8 @@ export default function CreateEventInviteFriendsSection({searchText, setSearchTe
                 inputContainerStyle={styles.searchBarTextArea}
                 placeholder="Search by username..."
                 onChangeText={(value) => setSearchText(value)}
-                onClear={() => setNames(searchText)}
+                onSubmitEditing={() => {setNames(searchText); setSearchText("");}}
+                onClear={() => setSearchText("")}
                 value={searchText}
                 inputStyle={styles.searchBarText}
                 searchIcon={{ color: "#888888" }}
