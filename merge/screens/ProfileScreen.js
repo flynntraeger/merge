@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     overflow: "hidden",
-    marginTop: 5
+    marginTop: 15
   },
   pageCont: {
     width:"95%",

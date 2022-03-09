@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 import TopBar from './components/TopBar/TopBar';
 import NavBar from './components/NavBar/NavBar';
 import React from 'react';
-
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';

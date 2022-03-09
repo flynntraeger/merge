@@ -80,7 +80,7 @@ class NetworkGraph extends Component
           x2={targetCircleCoordinates.xCordinate}
           y2={targetCircleCoordinates.yCordinate}
           stroke={selectedCircleLinesColor}
-          strokeWidth="3"
+          strokeWidth="2"
           key={'selected_circle_line'+index}/>
     });
     return allLinesForCurrentCircle;

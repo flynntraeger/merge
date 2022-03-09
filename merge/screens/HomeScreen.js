@@ -17,15 +17,14 @@ export default function HomeScreen({ route, navigation}) {
     const params = route.params;
     const [selectedCircleIndex, setSelectedCircleIndex] = useState(1);
     let connections = {
-      "1":[2,4], //node at index 1 is connected to nodes at index 2 and 4 respectively.
-      "2":[6,7] //node at index 2 is connected to nodes at index 6 and 7 respectively.
+      "2":[0,1,3,4,5,6,7,8] //node at index 2 is connected to nodes at index 6 and 7 respectively.
     };
     let circleTitles = Object.keys(profiles);
     return (
         <View style={styles.container}>
-          <TopBar title="My Home" desc="View your connections"/>
+          <TopBar title="My Home" desc="View your network of connections"/>
           <NetworkGraph
-          selectedCircleIndex={selectedCircleIndex} //so that clicks on the circles reflect results in real time.
+          selectedCircleIndex={2} //so that clicks on the circles reflect results in real time.
           circleTitles={circleTitles}
           connections={connections}
           containerHeight={600}
@@ -33,11 +32,12 @@ export default function HomeScreen({ route, navigation}) {
           centralCircleRadius={65}
           centralCircleStrokeColor="#57B288"
           centralCircleFillColor="#57B288"
+          selectedCircleLinesColor="#888888"
           otherCircleLinesColor="#888888"
           otherCirclesRadius={50}
           otherCircleFillColor="#353535"
           distanceFromCenter={200}
-          onCircleClick={setSelectedCircleIndex}/>
+          onCircleClick={(index) => navigation.navigate("Profile Screen", {username: circleTitles[index]})}/>
         </View>
     );
 }
