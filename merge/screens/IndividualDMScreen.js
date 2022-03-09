@@ -41,6 +41,7 @@ export default function IndividualDMScreen({ route, navigation }) {
         onChangeShow={(newShow) => {
           onChangeShow(newShow);
         }}
+        showMessage={showMessage}
         username={params.username}
         />
     </View>
