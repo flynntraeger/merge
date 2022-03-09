@@ -3,6 +3,7 @@ import { View, StyleSheet, TextInput, Text} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { SearchBar } from 'react-native-elements';
 import { useState, useEffect } from 'react';
+import GameCard from '../GameCard/GameCard';
 
 //Technically this needs added functionality to actually fetch usernames in system and display added,
 //currently hardcoded
@@ -51,6 +52,20 @@ export default function CreateEventGamesSection() {
                 {overTwo && <Text style={styles.bottomText}>, and {numOtherFriends} more...</Text>} 
             </View>
             <Text style={styles.bottomText}>Recommended: </Text>
+            <View style={styles.gameRow}>
+              <GameCard
+                game={"Valorant"}
+                picURL={"https://www.riotgames.com/darkroom/1000/d0807e131a84f2e42c7a303bda672789:5f9cc29dd5d2a50bb1a8ea2efbc97abb/valorant-offwhitelaunch-keyart.jpg"}
+              />
+              <GameCard
+                game={"Minecraft"}
+                picURL={"https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"}
+              />
+              <GameCard
+                game={"Genshin"}
+                picURL={"https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2020/09/30/26b53ef6-0237-11eb-88c7-25dcd0ae6080_image_hires_051230.JPG?itok=gKu8RgUe&v=1601413957"}
+              />
+            </View>
         </View>
     );
 }
@@ -81,7 +96,7 @@ const styles = StyleSheet.create({
       padding: 0,
       paddingTop: 5,
       backgroundColor: '#1D1D1D',
-      height: '40%'
+      height: 40
     },
     sectionText: {
       color: '#FFFFFF',
@@ -93,5 +108,11 @@ const styles = StyleSheet.create({
     },
     bottomTextWrap: {
       flexDirection: 'row'
+    },
+    gameRow: {
+      marginVertical: 15,
+      flexDirection: "row",
+      flexWrap: "wrap",
+      justifyContent: "space-evenly"
     }
   });
