@@ -11,7 +11,7 @@ export default function EventsScreen({ route, navigation}) {
         <View style={styles.container}>
           <TopBar title="Create New Event" desc="Let's plan something!"/>
           <CreateEventNameSection />
-          <CreateEventInviteFriendsSection />
+          <CreateEventInviteFriendsSection/>
         </View>
     );
 }
