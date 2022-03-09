@@ -12,14 +12,14 @@ export default function EventsScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
             <TopBar title="Create New Event" desc="Let's plan something!"/>
-            
+            <ScrollView style={styles.scroll}>
                 <View style={styles.body}>
                   <CreateEventNameSection />
                   <CreateEventInviteFriendsSection/>
                   <CreateEventScheduleSection/>
                   <CreateEventGamesSection/>
                 </View>
-            
+            </ScrollView>
         </View>
     );
 }
@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     width:"100%",
     alignItems: "center",
     marginTop: 0,
-    marginBottom: 800
+    marginBottom: 750
   },
 });
