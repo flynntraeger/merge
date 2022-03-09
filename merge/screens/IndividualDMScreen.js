@@ -38,9 +38,7 @@ export default function IndividualDMScreen({ route, navigation }) {
         })}
       </ScrollView>
       <SendMessageBar showMessage={showMessage}
-        onChangeShow={(newShow) => {
-          onChangeShow(newShow);
-        }}
+        onChangeShow={(newShow) => { onChangeShow(newShow); }}
         showMessage={showMessage}
         username={params.username}
         />
