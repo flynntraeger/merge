@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
+import CreateEventNameSection from '../components/Event/CreateEventNameSection';
+import CreateEventInviteFriendsSection from '../components/Event/CreateEventInviteFriendsSection';
 
 export default function EventsScreen({ route, navigation}) {
     const params = route.params;
@@ -8,9 +10,8 @@ export default function EventsScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="Create New Event" desc="Let's plan something!"/>
-          <View style={styles.textBox}>
-            <Text style={styles.text}> I am dying </Text>
-          </View>
+          <CreateEventNameSection />
+          <CreateEventInviteFriendsSection />
         </View>
     );
 }
@@ -21,13 +22,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#222222",
     justifyContent: 'flex-start',
     alignItems: 'center',
-  },
-  textBox: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 100,
-  },
-  text: {
-        color: 'white'
   }
 });

@@ -25,6 +25,7 @@ export default function SendMessageBar({showMessage, onChangeShow}) {
                 value={typedText}
                 selectionColor='#888888'
                 placeholderTextColor={"#888888"}
+                autoCorrect={false}
                 placeholder="Send a message..."
             />
             <Button 
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#313131',
         width: '70%',
         color: '#888888',
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
+        borderRadius: 3
     }
   });
