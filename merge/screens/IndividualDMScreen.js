@@ -14,10 +14,10 @@ export default function IndividualDMScreen({ route, navigation }) {
   const params = route.params;
 
   const [showMessage, onChangeShow] = React.useState(false);
-  const [showInvite, onChangeInvite] = React.useState(true);
-  const [newMessageToAdd, addNewMessage] = React.useState("");
 
   const [stateProfiles, updateMessages] = React.useState(profiles);
+
+  profiles.user.messages_with[params.username].newMessages = 0;
 
   return (
     <View style={styles.container}>
@@ -25,7 +25,7 @@ export default function IndividualDMScreen({ route, navigation }) {
       <ScrollView contentContainerStyle={styles.scrollView}>
         {stateProfiles.user.messages_with[params.username].messages.map((item, index) => {
           return ( index === 4 ?
-            <GameInvite key={index} username={params.username} game="Minecraft" time="5:00PM" date="Feb 4" active ={true} handler={onChangeInvite}/>
+            <GameInvite key={index} username={params.username} game="Minecraft" time="5:00PM" date="Feb 4" active ={true}/>
             :
             <DirectMessage
                 key={index}
@@ -36,24 +36,13 @@ export default function IndividualDMScreen({ route, navigation }) {
             />
           );
         })}
-        {
-          showMessage ? 
-          <DirectMessage
-            username={stateProfiles.user.uname}
-            timestamp={"Today @ 11:21AM"}
-            message={newMessageToAdd}
-            picURL={stateProfiles.user.imgurl}
-          />
-          : null
-        }
       </ScrollView>
       <SendMessageBar showMessage={showMessage}
         onChangeShow={(newShow) => {
           onChangeShow(newShow);
         }}
-        newMessage={(messageToAdd) => {
-          addNewMessage(messageToAdd);
-        }} />
+        username={params.username}
+        />
     </View>
   );
 }

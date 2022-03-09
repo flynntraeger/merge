@@ -18,10 +18,11 @@ const games = require('../components/Games/games.json')
 export default function ProfileScreen({ route, navigation}, username) {
     const params = route.params;
     const [index, setIndex] = React.useState(0);
+
     return (
         <View style={styles.container}>
           <ScrollView style={styles.scroll}>
-            <ProfileHeader />
+            <ProfileHeader pfpURL={profiles[params.username].imgurl} bannerURL={profiles[params.username].bannerurl}/>
             <View style={styles.body}>
             <ProfileTopBox username={params.username}/>
             <View style={styles.tabCont}>

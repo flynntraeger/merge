@@ -20,9 +20,13 @@ class MessageHeader extends React.Component {
                     rounded
                     source={{uri: this.props.picURL}}
                 />
-                <Badge style={styles.badge}>
+                {
+                  this.props.value > 0 ? 
+                  <Badge style={styles.badge}>
                     {this.props.value}
-                </Badge>
+                  </Badge>
+                  : null
+                }  
             </View>
             <View style={styles.rightCol}>
                 <View style={styles.topRow}>

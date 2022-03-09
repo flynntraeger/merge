@@ -23,7 +23,7 @@ export default function ListedEvent(props) {
 const styles = StyleSheet.create({
     container: {
       width: '100%',
-      height: '13%',
+      height: 105,
       flexDirection:"row",
       justifyContent: 'center',
       padding: 10,

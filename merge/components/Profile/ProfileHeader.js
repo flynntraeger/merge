@@ -8,21 +8,27 @@ import { Sun, BellOff, Moon } from "react-native-feather";
 //Change Sun to BellOff or Moon based on what status is passed in to this, same with badge style backgroundColor
 //this component should probably take in banner bg, profile pic, and status
 
-export default function ProfileHeader() {
-    return (
+class ProfileHeader extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+
+    render() {
+        return (
         <View style={styles.container}>
-            <ImageBackground source={{uri: 'https://i.imgur.com/gXlEWfc.jpg'}} resizeMode="cover" style={styles.banner}>
+            <ImageBackground source={{uri: this.props.bannerURL}} resizeMode="cover" style={styles.banner}>
                 <Avatar 
                     style={styles.profilePic}
-                    source={{uri: "https://i.imgur.com/FaB0CFp.png"}} 
+                    source={{uri: this.props.pfpURL}} 
                     //this.props.picURL; fix the hardcoded images later
                 />
             </ ImageBackground>
             <Badge style={styles.badge}>
             </Badge> 
-            <Sun style={styles.statusIcon} stroke='black'/>
+            <Sun style={styles.statusIcon} stroke="#222222"/>
         </View>
     );
+    }
 }
 
 const styles = StyleSheet.create({
@@ -36,12 +42,12 @@ const styles = StyleSheet.create({
         height: 135,
         borderRadius: 135 / 2,
         overflow: "hidden",
-        borderWidth: 2,
-        borderColor: "black"
+        borderWidth: 2.5,
+        borderColor: "#222222"
     },
     banner: {
         width: '100%',
-        height: '88%',
+        height: '90%',
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: 40
@@ -53,14 +59,17 @@ const styles = StyleSheet.create({
         transform: [{ scale: 2}],
         backgroundColor: "#95cf97",
         borderWidth: 1,
-        borderColor: "black",
-        color: "#222222"
+        borderColor: "#222222"
     },
     statusIcon: {
         width: 25,
         height: 25,
         position: 'absolute',
+        color:"#222222",
         top: '75%',
         left: '60.6%'
     }
   });
+
+  
+export default ProfileHeader;
