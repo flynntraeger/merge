@@ -1,26 +1,29 @@
 import React from 'react';
 import { View, StyleSheet, TextInput, Text} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { SearchBar } from 'react-native-elements';
+import { useState, useEffect } from 'react';
 
 export default function CreateEventInviteFriendsSection() {
-    const [typedText, onChangeText] = React.useState("");
+    const [searchText, setSearchText] = useState("");
 
     return (
         <View style={styles.container}>
             <Text style={styles.sectionText}>
-                Name your event!
+                Invite Friends!
             </Text>
-            <View style={styles.inputView}>
-                <TextInput 
-                style={styles.input}
-                onChangeText={onChangeText} 
-                value={typedText}
-                selectionColor='#888888'
+            <SearchBar
+                containerStyle={styles.searchBarContainer}
+                inputContainerStyle={styles.searchBarTextArea}
+                placeholder="Search by username..."
+                onChangeText={(value) => setSearchText(value)}
+                value={searchText}
+                inputStyle={styles.searchBarText}
+                searchIcon={{ color: "#888888" }}
+                clearIcon={{ color: "#888888" }}
                 placeholderTextColor={"#888888"}
-                autoCorrect={false}
-                placeholder="Enter a title..."
+                selectionColor='#888888'
             />
-            </View>
         </View>
     );
 }
@@ -36,21 +39,20 @@ const styles = StyleSheet.create({
       paddingVertical: 15,
       backgroundColor:'#1D1D1D'
     },
+    searchBarTextArea: {
+      backgroundColor: "#313131"
+    },
+    searchBarText: {
+      color: "#888888"
+    },
+    searchBarContainer: {
+      width: 375,
+      borderTopWidth: 0,
+      borderBottomWidth: 0,
+      backgroundColor: "#222222"
+    },
     sectionText: {
-      fontSize: 19,
       color: '#FFFFFF',
-      paddingBottom: 5
-    },
-    input: {
-        backgroundColor: '#313131',
-        width: '99%',
-        color: '#57B288',
-        paddingHorizontal: 10,
-        fontSize: 16,
-        borderRadius: 3
-    },
-    inputView: {
-        paddingTop: 5,
-        paddingBottom: 2
+      fontSize: 19
     }
   });
