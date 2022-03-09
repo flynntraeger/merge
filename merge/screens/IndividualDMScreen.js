@@ -7,7 +7,6 @@ import DirectMessage from '../components/DirectMessage/DirectMessage';
 import GameInvite from '../components/GameInvite/GameInvite';
 import { ScrollView } from 'react-native-gesture-handler';
 
-
 const profiles = require('../components/Profile/profiles.json')
 
 export default function IndividualDMScreen({ route, navigation }) {

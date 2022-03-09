@@ -9,6 +9,11 @@ const profiles = require('../../components/Profile/profiles.json');
 export default function SendMessageBar({showMessage, onChangeShow, newMessage, username}) {
     const [typedText, onChangeText] = React.useState("");
 
+    const [currentTime, getCurrentTime] = React.useState(Date().toLocaleString().substring(16,21))
+    const [AMorPM, getAMPM] = React.useState(parseInt(currentTime.substring(0, 2)) < 13 ? "AM" : "PM")
+    const [addCurrTimeString, addCurrTime] = React.useState("Today @ " + currentTime + AMorPM)
+    
+    console.log(currentTime)
     return (
         <View style={styles.container}>
             <Button 
@@ -31,7 +36,7 @@ export default function SendMessageBar({showMessage, onChangeShow, newMessage, u
                     if (typedText !== "") {
                         onChangeShow(!showMessage);
                         onChangeText("");
-                        profiles.user.messages_with[username].messages.push({"sender": "CodewordPickle", "time": "Today @ 3:14PM", "message": typedText});
+                        profiles.user.messages_with[username].messages.push({"sender": "CodewordPickle", "time": addCurrTimeString, "message": typedText});
                     }
             }}
             />
@@ -42,7 +47,7 @@ export default function SendMessageBar({showMessage, onChangeShow, newMessage, u
                     if (typedText !== "") {
                         onChangeShow(!showMessage);
                         onChangeText("");
-                        profiles.user.messages_with[username].messages.push({"sender": "CodewordPickle", "time": "Today @ 3:14PM", "message": typedText});
+                        profiles.user.messages_with[username].messages.push({"sender": "CodewordPickle", "time": addCurrTimeString, "message": typedText});
                     }
             }}
             />
