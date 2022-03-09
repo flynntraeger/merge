@@ -27,13 +27,20 @@ export default function SendMessageBar({showMessage, onChangeShow, newMessage, u
                 placeholderTextColor={"#888888"}
                 autoCorrect={false}
                 placeholder="Send a message..."
+                onSubmitEditing={() => {
+                    if (typedText !== "") {
+                        onChangeShow(!showMessage);
+                        onChangeText("");
+                        profiles.user.messages_with[username].messages.push({"sender": "CodewordPickle", "time": "Today @ 3:14PM", "message": typedText});
+                    }
+            }}
             />
             <Button 
                 icon={<ArrowRightCircle stroke='#57b288' width={26} height={26} />}
                 buttonStyle={styles.iconButton}
-                onPress={(param) => {
+                onPress={() => {
                     if (typedText !== "") {
-                        onChangeShow(param);
+                        onChangeShow(!showMessage);
                         onChangeText("");
                         profiles.user.messages_with[username].messages.push({"sender": "CodewordPickle", "time": "Today @ 3:14PM", "message": typedText});
                     }
