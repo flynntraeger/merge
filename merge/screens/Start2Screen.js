@@ -35,8 +35,7 @@ export default function Start2Screen({ route, navigation }) {
                             "Open-world",
                             "Indie",
                             "Gacha",
-                        ].map(genre => <Togglebox title={genre} key={genre + "-genre"} />)
-                        )()}
+                        ].map(genre => <Togglebox title={genre} key={genre + "-genre"} />))()}
                         <Togglebox title="+" />
                     </View>
                 </View>
@@ -104,8 +103,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: "#222222",
         padding: 40
-        // padding: 20,
-        // paddingVertical: 40,
     },
     formRow: {
         marginBottom: 20,

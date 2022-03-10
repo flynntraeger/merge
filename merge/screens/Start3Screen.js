@@ -7,27 +7,23 @@ export default function Start3Screen({ route, navigation }) {
     const [searchText, setSearchText] = useState("");
     return (
         <View style={styles.container}>
-            <View>
-                <View style={styles.formRow}>
-                    <Text style={styles.formRowText}>When are you free to game?</Text>
-                    <View style={{ background: "gray", height: 100, marginBottom: 40 }}>
-                        <Text>WIP</Text>
-                    </View>
-                </View>
-                <View style={styles.formRow}>
-                    <Text style={styles.formRowText}>Add your friends</Text>
-                    <SearchBar
-                        containerStyle={styles.searchBarContainer}
-                        inputContainerStyle={styles.searchBarTextArea}
-                        placeholder="Search by title"
-                        onChangeText={value => setSearchText(value)}
-                        value={searchText}
-                        searchIcon={{ color: "black" }}
-                        clearIcon={{ color: "black" }}
-                        placeholderTextColor={"black"}
-                        selectionColor='black'
-                    />
-                </View>
+            <View style={styles.formRow}>
+                <Text style={styles.formRowText}>When are you free to game?</Text>
+                <Image style={{ width: 310, height: 385 }} source={require("../assets/calendar.png")} />
+            </View>
+            <View style={styles.formRow}>
+                <Text style={styles.formRowText}>Add your friends</Text>
+                <SearchBar
+                    containerStyle={styles.searchBarContainer}
+                    inputContainerStyle={styles.searchBarTextArea}
+                    placeholder="Search by title"
+                    onChangeText={value => setSearchText(value)}
+                    value={searchText}
+                    searchIcon={{ color: "black" }}
+                    clearIcon={{ color: "black" }}
+                    placeholderTextColor={"black"}
+                    selectionColor='black'
+                />
             </View>
             <View style={styles.bottomBar}>
                 <TouchableOpacity

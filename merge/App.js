@@ -15,7 +15,7 @@ import Start2Screen from './screens/Start2Screen';
 import Start3Screen from './screens/Start3Screen';
 import CreateEventScreen from './screens/CreateEventScreen';
 
-const SHOW_START_SCREENS = false;
+const SHOW_START_SCREENS = true;
 
 const Stack = createStackNavigator();
 
