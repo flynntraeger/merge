@@ -107,8 +107,7 @@ const styles = StyleSheet.create({
     },
     fieldTextInput: {
         padding: 15,
-        fontSize: 14,
-        outlineStyle: "none",
+        fontSize: 14
     },
     bio: {
         backgroundColor: '#E7E7E7',
@@ -120,7 +119,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         marginTop: 40,
-        alignSelf: "end",
+        alignSelf: "flex-end",
     },
     navButtonText: {
         color: "#57B288",
