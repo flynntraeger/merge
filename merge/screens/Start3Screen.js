@@ -69,6 +69,7 @@ const styles = StyleSheet.create({
     },
     formRow: {
         marginBottom: 20,
+        width:"95%"
     },
     formRowText: {
         color: "white",
@@ -84,14 +85,16 @@ const styles = StyleSheet.create({
         width: "100%",
     },
     searchBarContainer: {
-        width: 375,
+        width: "100%",
+        height:40,
         borderTopWidth: 0,
         borderBottomWidth: 0,
         backgroundColor: "#E7E7E7",
         borderRadius: 50,
     },
     searchBarTextArea: {
-        backgroundColor: "#E7E7E7"
+        backgroundColor: "#E7E7E7",
+        height: 25
     },
     navButton: {
         display: "flex",

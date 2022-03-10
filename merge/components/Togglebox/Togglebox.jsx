@@ -30,7 +30,7 @@ const buttonBaseStyle = {
 };
 
 const textBaseStyle = {
-    fontSize: 20,
+    fontSize: 13,
 };
 
 const styles = StyleSheet.create({
