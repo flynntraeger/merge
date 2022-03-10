@@ -351,5 +351,38 @@
             }
         ],
         "messages_with": ["user"]
+    },
+    "New": {
+        "fname": "Tony",
+        "uname": "Dubway",
+        "type": "Competitive Gamer",
+        "about": "Hi there, I'm Someone",
+        "imgurl": "https://i.pinimg.com/originals/09/c5/77/09c57778b0a8d2b746bad8704d8f91be.jpg",
+        "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
+        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
+        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
+        "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
+        "bonds": [
+            {
+                "username": "Naftyy",
+                "level": 17,
+                "experience": 0.2,
+                "starred": true
+            },
+            {
+                "username": "TurtleDuck",
+                "level": 15,
+                "experience": 0.76,
+                "starred": true
+            },
+            {
+                "username": "Al_x_9",
+                "level": 12,
+                "experience": 0.5,
+                "starred": true
+            }
+        ],
+        "messages_with": ["user"]
     }
 }
