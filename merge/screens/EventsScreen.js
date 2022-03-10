@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { React, useState, useEffect, useReducer } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
@@ -13,17 +13,19 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 const events = require('../components/Event/events.json')
 
+
 export default function EventsScreen({ route, navigation}) {
     const params = route.params;
 
-    const [toggle, setToggle] = useState("");
+    const [_, forceUpdate] = useReducer((x) => x + 1, 0);
 
     useEffect(() => {
-      const focused = navigation.addListener('focus', () => {
-        setToggle(!toggle);
-        console.log("events refreshed")
+      const unsubscribe = navigation.addListener('focus', () => {
+        forceUpdate();
       });
-      return focused;
+  
+      // Return the function to unsubscribe from the event so it gets removed on unmount
+      return unsubscribe;
     }, [navigation]);
 
     return (
