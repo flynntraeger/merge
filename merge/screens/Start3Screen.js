@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements';
+import NextButton from '../components/Buttons/NextButton'
+import BackButton from '../components/Buttons/BackButton'
 
 export default function Start3Screen({ route, navigation }) {
     const params = route.params;
@@ -26,33 +28,9 @@ export default function Start3Screen({ route, navigation }) {
                 />
             </View>
             <View style={styles.bottomBar}>
-                <TouchableOpacity
-                    style={styles.navButton}
-                    onPress={() => { navigation.navigate("Start2 Screen") }}
-                >
-                    <Image style={{
-                        marginRight: 15,
-                        width: 9,
-                        height: 16
-                    }}
-                        source={require("../assets/arrow_left.svg")} />
-                    <Text style={styles.navButtonText}>Back</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.navButton}
-                    onPress={() => {
-                        params.setShowNav(true);
-                        navigation.navigate("Home Screen");
-                    }}
-                >
-                    <Text style={styles.navButtonText}>Finish</Text>
-                    <Image style={{
-                        marginLeft: 15,
-                        width: 9,
-                        height: 16
-                    }}
-                        source={require("../assets/arrow_right.svg")} />
-                </TouchableOpacity>
+                <BackButton backText="Back" screenToNavigateTo="Start2 Screen" />
+                <Text>                             </Text>
+                <NextButton nextText="Finish" screenToNavigateTo="Profile Screen" />
             </View>
         </View>
     );
@@ -78,11 +56,10 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     bottomBar: {
-        display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
         width: "100%",
+        left: -15,
+        top: 20
     },
     searchBarContainer: {
         width: "100%",
