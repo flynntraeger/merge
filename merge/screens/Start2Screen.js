@@ -8,7 +8,7 @@ export default function Start2Screen({ route, navigation }) {
     const [searchText, setSearchText] = useState("");
     return (
         <View style={styles.container}>
-            <View>
+            <View style={styles.topHalf}>
                 <View style={styles.formRow}>
                     <Text style={styles.formRowText}>What style of gamer are you?</Text>
                     <View style={styles.toggleList}>
@@ -43,14 +43,15 @@ export default function Start2Screen({ route, navigation }) {
                     <Text style={styles.formRowText}>Add your games</Text>
                     <TouchableOpacity style={{
                         backgroundColor: "#57B288",
-                        paddingVertical: 15,
+                        paddingVertical: 12,
+                        marginTop:5,
                         display: "flex",
                         flexDirection: "row",
                         justifyContent: "center",
                         alignItems: "center",
                     }}>
                         <Image style={{ width: 30, height: 30, marginRight: 10 }} source={require("../assets/steam.png")} />
-                        <Text style={{ fontSize: 20, fontWeight: "bold", color: "white" }}>Import from Steam</Text>
+                        <Text style={{ fontSize: 18, fontWeight: "bold", color: "white" }}>Import from Steam</Text>
                     </TouchableOpacity>
                     <Text style={{ marginVertical: 10, fontSize: 20, color: "white", }}> - OR - </Text>
                     <SearchBar
@@ -101,8 +102,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: "column",
         backgroundColor: "#222222",
         padding: 40
+    },
+    topHalf: {
+        width: "100%"
     },
     formRow: {
         marginBottom: 20,
@@ -126,14 +131,17 @@ const styles = StyleSheet.create({
         flexWrap: "wrap",
     },
     searchBarContainer: {
-        width: 375,
+        width: "100%",
         borderTopWidth: 0,
         borderBottomWidth: 0,
         backgroundColor: "#E7E7E7",
         borderRadius: 50,
+        height:40
+
     },
     searchBarTextArea: {
-        backgroundColor: "#E7E7E7"
+        backgroundColor: "#E7E7E7",
+        height:25
     },
     navButton: {
         display: "flex",
