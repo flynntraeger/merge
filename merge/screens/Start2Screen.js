@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 import Togglebox from "../components/Togglebox/Togglebox";
+import NextButton from '../components/Buttons/NextButton'
+import BackButton from '../components/Buttons/BackButton'
 
 export default function Start2Screen({ route, navigation }) {
     const params = route.params;
@@ -47,11 +49,11 @@ export default function Start2Screen({ route, navigation }) {
                         marginTop:5,
                         display: "flex",
                         flexDirection: "row",
-                        justifyContent: "center",
+                        justifyContent: "space-evenly",
                         alignItems: "center",
                     }}>
                         <Image style={{ width: 30, height: 30, marginRight: 10 }} source={require("../assets/steam.png")} />
-                        <Text style={{ fontSize: 18, fontWeight: "bold", color: "white" }}>Import from Steam</Text>
+                        <Text style={{ fontSize: 18, color: 'black' }}>Import games from Steam!</Text>
                     </TouchableOpacity>
                     <Text style={{ marginVertical: 10, fontSize: 20, color: "white", }}> - OR - </Text>
                     <SearchBar
@@ -68,30 +70,9 @@ export default function Start2Screen({ route, navigation }) {
                 </View>
             </View>
             <View style={styles.bottomBar}>
-                <TouchableOpacity
-                    style={styles.navButton}
-                    onPress={() => { navigation.navigate("Start1 Screen") }}
-                >
-                    <Image style={{
-                        marginRight: 15,
-                        width: 9,
-                        height: 16
-                    }}
-                        source={require("../assets/arrow_left.svg")} />
-                    <Text style={styles.navButtonText}>Back</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={styles.navButton}
-                    onPress={() => { navigation.navigate("Start3 Screen") }}
-                >
-                    <Text style={styles.navButtonText}>Next</Text>
-                    <Image style={{
-                        marginLeft: 15,
-                        width: 9,
-                        height: 16
-                    }}
-                        source={require("../assets/arrow_right.svg")} />
-                </TouchableOpacity>
+                <BackButton backText="Back" screenToNavigateTo="Start1 Screen" />
+                <Text>                           </Text>
+                <NextButton nextText="Next" screenToNavigateTo="Start3 Screen" />
             </View>
         </View >
     );
@@ -119,11 +100,9 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     bottomBar: {
-        display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
         width: "100%",
+        left: -20
     },
     toggleList: {
         display: "flex",
