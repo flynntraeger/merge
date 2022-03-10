@@ -1,5 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity } from 'react-native';
+import NextButton from '../components/Buttons/NextButton'
+import { Upload } from "react-native-feather";
 
 export default function Start1Screen({ route, navigation }) {
     const params = route.params;
@@ -27,6 +29,7 @@ export default function Start1Screen({ route, navigation }) {
                             onChangeText={text => params.setUsername(text)}
                             style={styles.fieldTextInput}
                             placeholder="Username"
+                            autoCorrect={false}
                         />
                     </View>
                 </View>
@@ -36,6 +39,7 @@ export default function Start1Screen({ route, navigation }) {
                         <TextInput
                             style={styles.fieldTextInput}
                             placeholder="Email"
+                            autoCorrect={false}
                         />
                     </View>
                 </View>
@@ -57,11 +61,12 @@ export default function Start1Screen({ route, navigation }) {
                         marginBottom: 30,
                         display: "flex",
                         flexDirection: "row",
-                        justifyContent: "center",
-                        alignItems: "center"
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                        borderRadius: 5
                     }}>
-                        <Image style={{ width: 24, height: 24, marginRight: 10 }} source={require("../assets/upload.svg")} />
-                        <Text style={{ color: "white", fontWeight: "bold" }}>Upload profile picture</Text>
+                        <Upload style={styles.icon} />
+                        <Text style={{ color: "black", fontSize: 18 }}>Upload a profile picture!</Text>
                     </TouchableOpacity>
                 </View>
                 <View>
@@ -70,17 +75,16 @@ export default function Start1Screen({ route, navigation }) {
                         multiline={true}
                         numberOfLines={4}
                         placeholder="Bio (optional)"
+                        blurOnSubmit={true}
+                        autoCorrect={false}
                     />
-                </View>
-                <TouchableOpacity
-                    style={styles.navButton}
-                    onPress={() => { navigation.navigate("Start2 Screen") }}
-                >
-                    <Text style={styles.navButtonText}>Next</Text>
-                    <Image style={styles.navButtonImage} source={require("../assets/arrow_right.svg")} />
-                </TouchableOpacity>
+                </View>            
+            </View>   
+            <View style={styles.nextButton}>
+                <NextButton nextText="Next" screenToNavigateTo="Start2 Screen" />
             </View>
         </View>
+        
     );
 }
 
@@ -106,12 +110,14 @@ const styles = StyleSheet.create({
         marginLeft: 20,
     },
     fieldTextInput: {
-        padding: 15,
-        fontSize: 14
+        padding: 10,
+        fontSize: 16
     },
     bio: {
         backgroundColor: '#E7E7E7',
         padding: 20,
+        borderRadius: 5,
+        fontSize: 16
     },
     navButton: {
         display: "flex",
@@ -130,5 +136,14 @@ const styles = StyleSheet.create({
         marginLeft: 15,
         width: 9,
         height: 16
+    },
+    nextButton: {
+        paddingTop: 30,
+        paddingLeft: 220
+    },
+    icon: {
+        color: 'black',
+        width: 26,
+        height: 26
     }
 });
