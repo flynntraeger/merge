@@ -121,12 +121,12 @@
         ],
         "messages_with": ["user"]
     },
-    "CodewordPickle": {
+    "Wizzarder": {
         "fname": "Miranda",
-        "uname": "CodewordPickle",
+        "uname": "Wizzarder",
         "type": "Casual Gamer",
         "about": "All is good. Today I win at life. Hope you have a nice day :D",
-        "imgurl": "https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3",
+        "imgurl": "https://cdn.meiker.io/assets/11679/2020/05/icon_202005201502025ec5466ae4cb1.png",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
         "favGen": ["Open World", "Indie", "Gacha", "FPS"],
         "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
@@ -320,39 +320,6 @@
         "messages_with": ["user"]
     },
     "Dubway": {
-        "fname": "Tony",
-        "uname": "Dubway",
-        "type": "Competitive Gamer",
-        "about": "Hi there, I'm Someone",
-        "imgurl": "https://i.pinimg.com/originals/09/c5/77/09c57778b0a8d2b746bad8704d8f91be.jpg",
-        "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
-        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
-        "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
-        "bonds": [
-            {
-                "username": "Naftyy",
-                "level": 17,
-                "experience": 0.2,
-                "starred": true
-            },
-            {
-                "username": "TurtleDuck",
-                "level": 15,
-                "experience": 0.76,
-                "starred": true
-            },
-            {
-                "username": "Al_x_9",
-                "level": 12,
-                "experience": 0.5,
-                "starred": true
-            }
-        ],
-        "messages_with": ["user"]
-    },
-    "New": {
         "fname": "Tony",
         "uname": "Dubway",
         "type": "Competitive Gamer",
