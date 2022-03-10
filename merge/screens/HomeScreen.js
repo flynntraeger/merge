@@ -17,16 +17,17 @@ export default function HomeScreen({ route, navigation}) {
     const params = route.params;
     const [selectedCircleIndex, setSelectedCircleIndex] = useState(1);
     let connections = {
-      "2":[0,1,3,4,5,6,7,8] //node at index 2 is connected to nodes at index 6 and 7 respectively.
+      "1":[0,2,3,4,5,6,7,8] //node at index 2 is connected to nodes at index 6 and 7 respectively.
     };
-    let circleTitles = Object.keys(profiles);
+    let circleTitles = Object.keys(profiles).filter((item) => item !== "user");
+    console.log(Object.keys(profiles).filter((item) => item !== "user"));
     let newCircleTitles = circleTitles.slice(1) // fix this to have CodeWordPickle in middle but does get rid of extra 'user' at top
     return (
         <View style={styles.container}>
           <TopBar title="My Home" desc="View your network of connections"/>
           <NetworkGraph
-          selectedCircleIndex={2} //so that clicks on the circles reflect results in real time.
-          circleTitles={newCircleTitles}
+          selectedCircleIndex={1} //so that clicks on the circles reflect results in real time.
+          circleTitles={circleTitles}
           connections={connections}
           containerHeight={600}
           containerWidth={600}

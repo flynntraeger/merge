@@ -102,7 +102,7 @@ class NetworkGraph extends Component {
         <G key={"circle" + index} onPress={this.circleClicked(index)}>
           {/* <Circle cx={circleCoOrds.xCordinate} cy={circleCoOrds.yCordinate} r={otherCirclesRadius} stroke={circleStrokeColor} strokeWidth="2" fill={otherCircleFillColor} /> */}
           {/* <circle cx={circleCoOrds.xCordinate} cy={circleCoOrds.yCordinate} r={otherCirclesRadius} stroke={circleStrokeColor} strokeWidth="2" fill="none" /> */}
-          <image xlinkHref={profiles[title].imgurl} x={circleCoOrds.xCordinate - otherCirclesRadius} y={circleCoOrds.yCordinate - otherCirclesRadius} height={2 * otherCirclesRadius} width={2 * otherCirclesRadius} />
+          <Image xlinkHref={profiles[title].imgurl} x={circleCoOrds.xCordinate - otherCirclesRadius} y={circleCoOrds.yCordinate - otherCirclesRadius} height={2 * otherCirclesRadius} width={2 * otherCirclesRadius} />
           <Text x={circleCoOrds.xCordinate - otherCirclesRadius + 15} y={circleCoOrds.yCordinate + otherCirclesRadius + 20} fill={otherCircleTextColor} stroke={otherCircleTextColor}>{title}</Text>
         </G>
       )
@@ -126,7 +126,7 @@ class NetworkGraph extends Component {
               source={{ uri: 'https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3' }} /> */}
             {/* <Circle cx={containerWidth / 2} cy={containerHeight / 2} r={centralCircleRadius} stroke={centralCircleStrokeColor} strokeWidth="4" fill={centralCircleFillColor} style={{ borderWidth: 5 }} textAnchor="middle" />*/}
             {/* <circle cx={containerWidth / 2} cy={containerHeight / 2} r={centralCircleRadius} stroke={centralCircleStrokeColor} strokeWidth="4" fill="none" style={{ borderWidth: 5 }} textAnchor="middle" /> */}
-            <image xlinkHref={profiles["user"].imgurl} x={containerWidth / 2 - centralCircleRadius} y={containerHeight / 2 - centralCircleRadius} height={2 * centralCircleRadius} width={2 * centralCircleRadius} />
+            <Image xlinkHref={profiles["user"].imgurl} x={containerWidth / 2 - centralCircleRadius} y={containerHeight / 2 - centralCircleRadius} height={2 * centralCircleRadius} width={2 * centralCircleRadius} />
             <Text x={containerWidth / 2 - centralCircleRadius + 10} y={containerHeight / 2 + centralCircleRadius + 15} fill={centralCircleTextColor} stroke={centralCircleTextColor}>{profiles["user"].uname}</Text>
           </G>
           {this.addCircles()}

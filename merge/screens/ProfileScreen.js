@@ -9,7 +9,7 @@ import UserCard from '../components/UserCard/UserCard';
 import SendMessageBar from '../components/DirectMessage/SendMessageBar';
 import ProfileHeader from '../components/Profile/ProfileHeader';
 import ProfileTopBox from '../components/Profile/ProfileTopBox';
-import { Tab, TabView,Button } from 'react-native-elements';
+import { Tab, TabView, Button, Image } from 'react-native-elements';
 import { LogOut } from 'react-native-feather';
 
 const profiles = require('../components/Profile/profiles.json')
@@ -62,7 +62,12 @@ export default function ProfileScreen({ route, navigation}, username) {
                 </View>
               </View>
             : null}
-            {index === 1 ? <Text style={styles.subHeader}>[add schedule here]</Text> : null}
+            {index === 1 ? 
+              <View style={{marginBottom:15}}>
+                <Text style={styles.subHeader2}>Availability:</Text>
+                <Image style={{ width: 310, height: 385 }} source={require("../assets/calendar.png")} />
+              </View>
+            : null}
             {index === 2 ? 
               <View>
                 <Text style={styles.subHeader}>Starred:</Text>
@@ -150,6 +155,10 @@ const styles = StyleSheet.create({
   },
   subHeader: {
     color: "white"
+  },
+  subHeader2: {
+    color: "white",
+    marginBottom: 15
   },
   scroll: {
     width:"100%",
