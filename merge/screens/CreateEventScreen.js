@@ -14,6 +14,9 @@ import { useState, useEffect } from 'react';
 //Change Confirm button on line 65 to create the new event JSON and navigate back to Events Screen
 // (currently it only navigates back to the Events Screen, but that screen should be updated)
 
+const events = require('../components/Event/events.json')
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
 export default function EventsScreen({ route, navigation}) {
     const params = route.params;
 	const [typedText, onChangeText] = useState("");
@@ -53,6 +56,8 @@ export default function EventsScreen({ route, navigation}) {
         setStart(false);
     }
 
+    const newEventDate = new Date(typedDateText);
+
     return (
         <View style={styles.container}>
             <TopBar title="Create New Event" desc="Let's plan something!"/>
@@ -80,7 +85,19 @@ export default function EventsScreen({ route, navigation}) {
                 <Text style={styles.mainText}> Okay! You're scheduled to play {gameOne} on {typedDateText} at {typedTimeText} for {typedText}! </Text>
               </View>
               <Text style={styles.overlayCancelText} onPress={()=>toggleOverlay(false)}> CANCEL </Text>
-              <Text style={styles.overlayConfirmText} onPress={()=>navigation.navigate("Events Screen")}> CONFIRM </Text>
+              <Text style={styles.overlayConfirmText} onPress={()=>{
+                  events.splice(1, 0, {
+                    "eventTitle": typedText,
+                    "month": months[newEventDate.getMonth()],
+                    "day": newEventDate.getUTCDate(),
+                    "time": typedTimeText,
+                    "numInvites": numOtherFriends + (nameOne === "" ? 0 : 1) + (nameTwo === "" ? 0 : 1),
+                    "topGame": gameOne
+                },);
+                  navigation.navigate("Events Screen");
+                }}> 
+                CONFIRM 
+              </Text>
             </Overlay>
         </View>
     );

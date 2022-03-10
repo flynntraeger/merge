@@ -1,3 +1,4 @@
+import { React, useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
@@ -15,12 +16,22 @@ const events = require('../components/Event/events.json')
 export default function EventsScreen({ route, navigation}) {
     const params = route.params;
 
+    const [toggle, setToggle] = useState("");
+
+    useEffect(() => {
+      const focused = navigation.addListener('focus', () => {
+        setToggle(!toggle);
+        console.log("events refreshed")
+      });
+      return focused;
+    }, [navigation]);
+
     return (
         <View style={styles.container}>
           <TopBar title="My Events" desc="View your gaming schedule"/>
           <ScrollView style={styles.scroll}>
               <View style={styles.body}>
-                  <CreateEventButton />
+                  <CreateEventButton/>
                   {
                     events.map((item, index) => {
                       return (

@@ -23,7 +23,7 @@ export default function HomeScreen({ route, navigation}) {
     return (
         <View style={styles.container}>
           <TopBar title="My Home" desc="View your network of connections"/>
-          <NetworkGraph
+          {/*<NetworkGraph
           selectedCircleIndex={2} //so that clicks on the circles reflect results in real time.
           circleTitles={circleTitles}
           connections={connections}
@@ -38,6 +38,7 @@ export default function HomeScreen({ route, navigation}) {
           otherCircleFillColor="#353535"
           distanceFromCenter={200}
           onCircleClick={(index) => navigation.navigate("Profile Screen", {username: circleTitles[index]})}/>
+          */}
         </View>
     );
 }
