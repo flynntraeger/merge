@@ -1,3 +1,4 @@
+import { useState, React, useEffect, useMemo } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from '../components/TopBar/TopBar';
@@ -15,6 +16,19 @@ const notifs = require('../components/Notification/notifications.json')
 export default function NotifScreen({ route, navigation}) {
     const params = route.params;
 
+    const [isUpdate, setUpdate] = useState(true);
+
+    const pushUpdate = (message, index) => {
+      notifs[index].active = false;
+      notifs.unshift({
+        "title": "GameNotif",
+        "user": "", 
+        "message": message,
+        "active": false}
+      );
+      setUpdate(!isUpdate);
+    }
+
     return (
         <View style={styles.container}>
           <TopBar title="My Feed" desc="View your latest notifications"/>
@@ -27,6 +41,8 @@ export default function NotifScreen({ route, navigation}) {
               user = {item.user}
               message = {item.message}
               active = {item.active}
+              callback = {pushUpdate}
+              index = {index}
             />
             : <Notification
               key={index}

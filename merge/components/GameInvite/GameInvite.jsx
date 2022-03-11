@@ -10,17 +10,13 @@ class GameInvite extends React.Component {
     }
   }
 
-  hideOptions = () => {
-      this.props.setInvite(false)
-  }
-
   render() {
     return (
         <View style={styles.container}>
             <View style={styles.topRow}>
                 <Text style={styles.text}>{this.props.username} sent an invite to play {this.props.game} @ {this.props.time} on {this.props.date}</Text>
             </View>
-            {this.state.active ?
+            {this.props.active ?
                 <View style={styles.botRow}>
                     <Button
                         containerStyle={styles.buttonContainter}
@@ -28,15 +24,18 @@ class GameInvite extends React.Component {
                         titleStyle={styles.buttonText}
                         title="Accept"
                         onPress={()=> {
-                            this.hideOptions;
-                            this.setState({active: false});}}
+                            this.setState({active: false});
+                            if (this.props.callback) {
+                                this.props.callback("Gaming session with " + this.props.username + " was added to your calender.", this.props.index);
+                            }
+                        }}
                     />
                     <Button
                         containerStyle={styles.buttonContainter}
                         buttonStyle={styles.button}
                         titleStyle={styles.buttonText}
                         title="Reject"
-                        onPress={()=> { this.hideOptions;
+                        onPress={()=> {
                             this.setState({active: false});}}
                     />
                 </View>

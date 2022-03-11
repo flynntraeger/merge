@@ -33,9 +33,10 @@ class UserCard extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-      width: 100,
+      width: 105,
       flexDirection:"column",
-      justifyContent: "flex-start"
+      justifyContent: "flex-start",
+      marginBottom:15
       
     },
     image: {
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
         marginTop: 7
     },
     text: {
-        fontSize: 13,
+        fontSize: 12,
         textAlign: 'left',
         color: "#DDDDDD"
     },

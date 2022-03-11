@@ -2,8 +2,8 @@
     {
         "title": "GameNotif",
         "user": "Naftyy", 
-        "message": "sent an invite to 'ValoBalo' to play Valorant just now!",
-        "active": false
+        "message": "sent an invite to 'ValoBalo' to play Valorant just now! Accept the invite?",
+        "active": true
     },
     {
         "title": "New Connection",

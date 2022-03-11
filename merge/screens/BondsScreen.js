@@ -19,7 +19,7 @@ export default function BondsScreen({ route, navigation}, username) {
     const [index, setIndex] = React.useState(0);
     return (
         <View style={styles.container}>
-            <TopBar backButton={true} prevPage={"Profile Screen"} username={params.username} navigationPiece={navigation} title={"My Bonds"} desc={"View the progress of your bonds"} />
+            <TopBar backButton={true} prevPage={"Profile Screen"} username={params.username} navigationPiece={navigation} title={"Bonds"} desc={"View the progress of " + (params.username === "CodewordPickle" ? "your" : (params.username + "'s")) + " bonds"} />
             <ScrollView style={styles.scroll}>
                 <View style={styles.centerCont}>
                 <View style={styles.pageCont}>

@@ -84,7 +84,7 @@ export default function ProfileScreen({ route, navigation}, username) {
                 </View>
                 <View style={styles.userRow}>
                   <Button
-                    title={"View My Network"}
+                    title={"View in the Network"}
                     buttonStyle={styles.bottomButton}
                     onPress={()=> navigation.navigate("Home Screen")}
                   />

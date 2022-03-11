@@ -16,14 +16,20 @@ class GameNotif extends React.Component {
             <View style={styles.topRow}>
                 <Text style={styles.text}>{this.props.user} {this.props.message}</Text>
             </View>
-            {this.state.active ?
+            {this.props.active ?
                 <View style={styles.botRow}>
                     <Button
                         containerStyle={styles.buttonContainter}
                         buttonStyle={styles.button}
                         titleStyle={styles.buttonText}
                         title="Accept"
-                        onPress={()=> this.setState({active: false})}
+                        onPress={()=> {
+                        
+                        this.setState({active: false});
+                        if (this.props.callback) {
+                            this.props.callback("Gaming session with " + this.props.user + " was added to your calender.", this.props.index);
+                        }
+                    }}
                     />
                     <Button
                         containerStyle={styles.buttonContainter}
@@ -43,12 +49,12 @@ class GameNotif extends React.Component {
 const styles = StyleSheet.create({
     container: {
       minWidth:"95%",
+      maxWidth:"95%",
       borderWidth: 1,
       borderColor: "#57B288",
       borderRadius: 10,
       flexDirection:"column",
-      justifyContent:"flex-start",
-      flexWrap: "wrap",
+      justifyContent:"center",
       alignItems: "center",
       padding: 15,
       backgroundColor:'#222222',
