@@ -103,7 +103,23 @@ class NetworkGraph extends Component {
         <G key={"circle" + index} onPress={this.circleClicked(index)}>
           {/*<Circle cx={circleCoOrds.xCordinate} cy={circleCoOrds.yCordinate} r={otherCirclesRadius} stroke={circleStrokeColor} strokeWidth="2" fill={otherCircleFillColor} /> */}
           { /* <Circle cx={circleCoOrds.xCordinate} cy={circleCoOrds.yCordinate} r={otherCirclesRadius} stroke={circleStrokeColor} strokeWidth="2" fill="none" /> */}
-          {<Image xlinkHref={profiles[title].imgurl} x={circleCoOrds.xCordinate - otherCirclesRadius} y={circleCoOrds.yCordinate - otherCirclesRadius} height={2 * otherCirclesRadius} width={2 * otherCirclesRadius} />}
+          {/*<Image xlinkHref={profiles[title].imgurl} x={circleCoOrds.xCordinate - otherCirclesRadius} y={circleCoOrds.yCordinate - otherCirclesRadius} height={2 * otherCirclesRadius} width={2 * otherCirclesRadius} />*/}
+          <Defs>
+              <ClipPath id={"clip" + title}>
+                <Circle  cx={circleCoOrds.xCordinate} cy={circleCoOrds.yCordinate} r={otherCirclesRadius} stroke={circleStrokeColor} strokeWidth="2" fill={otherCircleFillColor} />
+              </ClipPath>
+            </Defs>
+
+            <Image
+              x={circleCoOrds.xCordinate-otherCirclesRadius}
+              y={circleCoOrds.yCordinate-otherCirclesRadius}
+              width={otherCirclesRadius*2}
+              height={otherCirclesRadius*2}
+              preserveAspectRatio="xMidYMid slice"
+              opacity="1"
+              xlinkHref={profiles[title].imgurl}
+              clipPath={"url(#clip" + title + ")"}
+            />
           <Text x={circleCoOrds.xCordinate - otherCirclesRadius + 15} y={circleCoOrds.yCordinate + otherCirclesRadius + 20} fill={otherCircleTextColor} stroke={otherCircleTextColor}>{title}</Text>
         </G>
       )
@@ -127,7 +143,23 @@ class NetworkGraph extends Component {
               source={{ uri: 'https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3' }} /> }
             {/*<Circle cx={containerWidth / 2} cy={containerHeight / 2} r={centralCircleRadius} stroke={centralCircleStrokeColor} strokeWidth="4" fill={centralCircleFillColor} style={{ borderWidth: 5 }} textAnchor="middle" />*/}
             {/* <Circle cx={containerWidth / 2} cy={containerHeight / 2} r={centralCircleRadius} stroke={centralCircleStrokeColor} strokeWidth="4" fill="none" style={{ borderWidth: 5 }} textAnchor="middle" />*/ }
-            {<Image xlinkHref={profiles["user"].imgurl} x={containerWidth / 2 - centralCircleRadius} y={containerHeight / 2 - centralCircleRadius} height={2 * centralCircleRadius} width={2 * centralCircleRadius} />}
+            {/*<Image xlinkHref={profiles["user"].imgurl} x={containerWidth / 2 - centralCircleRadius} y={containerHeight / 2 - centralCircleRadius} height={2 * centralCircleRadius} width={2 * centralCircleRadius} />*/}
+            <Defs>
+              <ClipPath id={"clipMain"}>
+                <Circle  cx={containerWidth / 2} cy={containerHeight / 2} r={centralCircleRadius} stroke={centralCircleStrokeColor} strokeWidth="2" fill={centralCircleFillColor} />
+              </ClipPath>
+            </Defs>
+
+            <Image
+              x={(containerWidth / 2) - centralCircleRadius}
+              y={(containerHeight / 2) - centralCircleRadius}
+              width={centralCircleRadius*2}
+              height={centralCircleRadius*2}
+              preserveAspectRatio="xMidYMid slice"
+              opacity="1"
+              xlinkHref={profiles["CodewordPickle"].imgurl}
+              clipPath={"url(#clipMain)"}
+            />
             <Text x={containerWidth / 2 - centralCircleRadius + 10} y={containerHeight / 2 + centralCircleRadius + 15} fill={centralCircleTextColor} stroke={centralCircleTextColor}>{profiles["user"].uname}</Text>
           </G>
           {this.addCircles()}
