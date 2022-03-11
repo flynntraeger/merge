@@ -14,7 +14,7 @@
                     {"sender": "YungTriggz", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
                     {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
                     {"sender": "YungTriggz", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                    {"sender": "YungTriggz", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
+                    {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
                     {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
                     {"sender": "YungTriggz", "time": "Today @ 3:14PM", "message": "please accept :)"}
                 ]
@@ -24,12 +24,13 @@
                 "newMessages": 1,
                 "level": 10,
                 "messages" : [
-                    {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
-                    {"sender": "Rashlasher", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
-                    {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
-                    {"sender": "Rashlasher", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                    {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
-                    {"sender": "Rashlasher", "time": "Today @ 11:24AM", "message": "Let me in the party plz"}
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 7:40PM", "message": "hey how's it going?!"},
+                    {"sender": "Rashlasher", "time": "Yesterday @ 7:43PM", "message": "im goooood how're you?"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 7:48PM", "message": "fine fine. bored tho. wanna play"},
+                    {"sender": "Rashlasher", "time": "Today @ 11:29AM", "message": "yeA, i can today lemme send an invite"},
+                    {"sender": "CodewordPickle", "time": "Today @ 11:43AM", "message": "sweeet"},
+                    {"sender": "CodewordPickle", "time": "Today @ 11:43AM", "message": "sweeet"},
+                    {"sender": "Rashlasher", "time": "Today @ 11:57AM", "message": "accept plz"}
                 ]
             }
         ,
@@ -38,12 +39,13 @@
                 "newMessages": 3,
                 "level": 3,
                 "messages" : [
-                    {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
-                    {"sender": "Naftyy", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 2:50PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
+                    {"sender": "Naftyy", "time": "Yesterday @ 4:35PM", "message": "of course! looking forward to it :)"},
                     {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
-                    {"sender": "Naftyy", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                    {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
-                    {"sender": "Naftyy", "time": "Yesterday @ 11:59PM", "message": "GG. headin to bed. zzz."}
+                    {"sender": "Naftyy", "time": "Yesterday @ 11:17PM", "message": "sending invite for tmrw"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 11:43PM", "message": "thanksss"},
+                    {"sender": "CodewordPickle", "time": "Yesterday @ 11:43PM", "message": "thanksss"},
+                    {"sender": "Naftyy", "time": "Yesterday @ 11:59PM", "message": "headin to bed. zzz."}
                 ]
             }
         ,
@@ -52,12 +54,13 @@
                 "newMessages": 4,
                 "level": 6,
                 "messages" : [
-                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
-                {"sender": "TurtleDuck", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
-                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
-                {"sender": "TurtleDuck", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
-                {"sender": "TurtleDuck", "time": "Yesterday @ 3:50PM", "message": "lets play agin sometime! uwu! owo!"}
+                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "what's up, you busy?"},
+                {"sender": "TurtleDuck", "time": "Yesterday @ 4:08PM", "message": "kinda. play soon?"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "flick me an invite tomorrow"},
+                {"sender": "TurtleDuck", "time": "Today @ 10:17AM", "message": "flicked"},
+                {"sender": "CodewordPickle", "time": "Today @ 11:23AM", "message": "leshgoo"},
+                {"sender": "CodewordPickle", "time": "Today @ 11:23AM", "message": "leshgoo"},
+                {"sender": "TurtleDuck", "time": "Today @ 11:54PM", "message": "lets play again sometime owo"}
                 ]
             },
 
@@ -65,12 +68,13 @@
                 "newMessages": 1,
                 "level": 3,
                 "messages" : [
-                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
-                {"sender": "Dubway", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
-                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
-                {"sender": "Dubway", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
-                {"sender": "Dubway", "time": "Feb 2 @ 12:48PM", "message": "i just got a coupon for $2 off at subway lol"}
+                {"sender": "Dubway", "time": "Yesterday @ 4:00PM", "message": "bro beanz"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "yea?"},
+                {"sender": "Dubway", "time": "Today @ 10:00AM", "message": "group sesh?"},
+                {"sender": "Dubway", "time": "Today @ 10:02AM", "message": "Minecraft?"},
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "looks good"},
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "looks good"},
+                {"sender": "Dubway", "time": "Today @ 12:48PM", "message": "nice"}
                 ]
             },
 
@@ -78,12 +82,13 @@
                 "newMessages": 2,
                 "level": 1,
                 "messages" : [
-                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": "hiiiiii! i miss you! let's play together soon >_<"},
-                {"sender": "KeeWee", "time": "Yesterday @ 4:00PM", "message": "of course! looking forward to it :)"},
-                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "okeeeee i'll send an invite soon"},
-                {"sender": "KeeWee", "time": "Today @ 10:00AM", "message": "sorry! i was a little busy but i'll send it now"},
-                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "yay!!!! :D"},
-                {"sender": "KeeWee", "time": "Feb 1 @ 8:30AM", "message": "Hey! Have you see the latest season of centaurworld?"}
+                {"sender": "CodewordPickle", "time": "Yesterday @ 3:20PM", "message": ">_<"},
+                {"sender": "KeeWee", "time": "Yesterday @ 4:00PM", "message": "what's up?"},
+                {"sender": "CodewordPickle", "time": "Yesterday @ 11:10PM", "message": "Minecraft soon?"},
+                {"sender": "KeeWee", "time": "Today @ 10:00AM", "message": "yea sure. here"},
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "too easy"},
+                {"sender": "CodewordPickle", "time": "Today @ 10:03AM", "message": "too easy"},
+                {"sender": "KeeWee", "time": "Today @ 11:30AM", "message": "talk soon!"}
                 ]
             }
         }
@@ -128,13 +133,13 @@
         "about": "All is good. Today I win at life. Hope you have a nice day :D",
         "imgurl": "https://exploringbits.com/wp-content/uploads/2022/01/cute-pfp-4.jpg?ezimgfmt=rs:352x354/rscb3/ng:webp/ngcb3",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
+        "favGen": ["Sandbox", "ARPG", "Simulation", "FPS"],
+        "comTags": ["Good Comms", "Chill Vibe"],
         "pinnedGames": ["Minecraft", "Omori", "Valorant"],
         "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
         "bonds": [
             {
-                "username": "Naftyy",
+                "username": "Rashlasher",
                 "level": 17,
                 "experience": 0.2,
                 "starred": true
@@ -146,7 +151,7 @@
                 "starred": true
             },
             {
-                "username": "Al_x_9",
+                "username": "Dubway",
                 "level": 12,
                 "experience": 0.5,
                 "starred": true
@@ -179,7 +184,7 @@
                 "starred": true
             },
             {
-                "username": "Naftyy",
+                "username": "YungTriggz",
                 "level": 18,
                 "experience": 0.8,
                 "starred": true
@@ -194,15 +199,15 @@
         "about": "I'd like a warm bagel right now.",
         "imgurl": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/103/original/Killua_2.jpg?1621356497",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
+        "favGen": ["Open World", "Adventure", "TPS", "FPS"],
+        "comTags": ["Good Comms", "Fun", "Excitable"],
         "pinnedGames": ["Minecraft", "Omori", "Valorant"],
         "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
         "bonds": [
             {
-                "username": "Naftyy",
-                "level": 17,
-                "experience": 0.2,
+                "username": "KeeWee",
+                "level": 12,
+                "experience": 0.9,
                 "starred": true
             },
             {
@@ -212,7 +217,7 @@
                 "starred": true
             },
             {
-                "username": "Al_x_9",
+                "username": "YungTriggz",
                 "level": 12,
                 "experience": 0.5,
                 "starred": true
@@ -224,22 +229,22 @@
         "fname": "Rachael",
         "uname": "TurtleDuck",
         "type": "Casual Gamer",
-        "about": "Hi there, I'm Someone",
+        "about": "HMU",
         "imgurl": "https://i.pinimg.com/736x/6a/ed/6a/6aed6a2b5849897063098520e1cbf7a2.jpg",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
-        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
+        "favGen": ["Sandbox", "RTS", "Sports", "Puzzles"],
+        "comTags": ["Fun", "Chill Vibe", "Lazy"],
+        "pinnedGames": ["Stardew Valley", "Fall Guys", "Haven"],
         "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
         "bonds": [
             {
                 "username": "Naftyy",
                 "level": 17,
-                "experience": 0.2,
+                "experience": 0.7,
                 "starred": true
             },
             {
-                "username": "TurtleDuck",
+                "username": "KeeWee",
                 "level": 15,
                 "experience": 0.76,
                 "starred": true
@@ -260,27 +265,27 @@
         "about": "Hi there, I'm Someone",
         "imgurl": "https://i.pinimg.com/originals/97/5c/dd/975cdd87fe34a5832f07b8e17d5edd1d.jpg",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
+        "favGen": ["Action", "Indie", "TPS", "FPS"],
         "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
-        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
-        "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
+        "pinnedGames": ["Danganronpa", "Ruined King", "Valorant"],
+        "allGames": ["Genshin", "Danganronpa", "Ruined King", "Phasmo", "Among Us", "Borderlands 3", "Fall Guys", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
         "bonds": [
             {
                 "username": "Naftyy",
-                "level": 17,
-                "experience": 0.2,
+                "level": 7,
+                "experience": 0.9,
                 "starred": true
             },
             {
-                "username": "TurtleDuck",
-                "level": 15,
+                "username": "Dubway",
+                "level": 5,
                 "experience": 0.76,
                 "starred": true
             },
             {
                 "username": "Al_x_9",
-                "level": 12,
-                "experience": 0.5,
+                "level": 2,
+                "experience": 0.22,
                 "starred": true
             }
         ],
@@ -289,30 +294,30 @@
     "Al_x_9": {
         "fname": "Amy",
         "uname": "Al_x_9",
-        "type": "Casual Gamer",
-        "about": "Hi there, I'm Someone",
+        "type": "Old Gamer",
+        "about": "Hey there just tryna make some new friends!",
         "imgurl": "https://i.pinimg.com/236x/fa/fa/22/fafa222b67b7b6a084cfc7ade2f894b5.jpg",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
-        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
-        "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
+        "favGen": ["RTS", "Indie", "Adventure", "MMORPG"],
+        "comTags": ["Good Comms", "Friendly Flame", "Godlike"],
+        "pinnedGames": ["Among Us", "Genshin", "TemTem"],
+        "allGames": ["Borderlands 3", "Fall Guys", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "Genshin", "TemTem", "Among Us"],
         "bonds": [
             {
-                "username": "Naftyy",
-                "level": 17,
+                "username": "Rashlasher",
+                "level": 14,
                 "experience": 0.2,
                 "starred": true
             },
             {
                 "username": "TurtleDuck",
-                "level": 15,
+                "level": 9,
                 "experience": 0.76,
                 "starred": true
             },
             {
-                "username": "Al_x_9",
-                "level": 12,
+                "username": "Dubway",
+                "level": 2,
                 "experience": 0.5,
                 "starred": true
             }
@@ -323,12 +328,12 @@
         "fname": "Tony",
         "uname": "Dubway",
         "type": "Competitive Gamer",
-        "about": "Hi there, I'm Someone",
+        "about": "brb going hard",
         "imgurl": "https://i.pinimg.com/originals/09/c5/77/09c57778b0a8d2b746bad8704d8f91be.jpg",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
-        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
+        "favGen": ["TPS", "FPS", "Sim", "Adventure"],
+        "comTags": ["Just Comms", "Ceebs", "Lazy"],
+        "pinnedGames": ["Fall Guys", "Phasmo", "Valorant"],
         "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
         "bonds": [
             {
@@ -339,13 +344,13 @@
             },
             {
                 "username": "TurtleDuck",
-                "level": 15,
+                "level": 12,
                 "experience": 0.76,
                 "starred": true
             },
             {
                 "username": "Al_x_9",
-                "level": 12,
+                "level": 7,
                 "experience": 0.5,
                 "starred": true
             }
