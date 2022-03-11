@@ -40,7 +40,6 @@ export default function HomeScreen({ route, navigation}) {
           otherCircleFillColor="#353535"
           distanceFromCenter={200}
           onCircleClick={(index) => navigation.navigate("Profile Screen", {username: circleTitles[index]})}/>
-         
         </View>
     );
 }
