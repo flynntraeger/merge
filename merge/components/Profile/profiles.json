@@ -158,30 +158,30 @@
         "fname": "Ember",
         "uname": "Rashlasher",
         "type": "Casual Gamer",
-        "about": "Hi there, I'm Ember!",
+        "about": "spain but just the s",
         "imgurl": "https://i.pinimg.com/736x/a0/f0/13/a0f0139fcd8b25ec1fcacb62963a0b75.jpg",
         "bannerurl": "https://i.ytimg.com/vi/Wimkqo8gDZ0/maxresdefault.jpg",
-        "favGen": ["Open World", "Indie", "Gacha", "FPS"],
-        "comTags": ["Good Comms", "Chill Vibe", "Giga Chad"],
-        "pinnedGames": ["Minecraft", "Omori", "Valorant"],
-        "allGames": ["Among Us", "Borderlands 3", "Fall Guys", "Genshin", "Haven", "Phasmo", "Slime Rancher", "Stardew Valley", "TemTem"],
+        "favGen": ["Roleplaying", "MOBA", "Indie", "FPS"],
+        "comTags": ["Good Comms", "Godlike", "Friendly Flame"],
+        "pinnedGames": ["League", "Valorant", "Dangan 2"],
+        "allGames": ["Genshin", "Danganronpa", "Ruined King", "Phasmo", "Pokemon Swo", "Omori", "Haven", "Monster Prom", "Overcooked 2"],
         "bonds": [
             {
-                "username": "Naftyy",
-                "level": 17,
-                "experience": 0.2,
+                "username": "Al_x_9",
+                "level": 32,
+                "experience": 0.4,
                 "starred": true
             },
             {
                 "username": "TurtleDuck",
-                "level": 15,
-                "experience": 0.76,
+                "level": 20,
+                "experience": 0.3,
                 "starred": true
             },
             {
-                "username": "Al_x_9",
-                "level": 12,
-                "experience": 0.5,
+                "username": "Naftyy",
+                "level": 18,
+                "experience": 0.8,
                 "starred": true
             }
         ],
