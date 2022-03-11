@@ -3,7 +3,7 @@ CS147 - Merge
 
 ### Installation
 
-First, clone directory locally \n
+First, clone directory locally. 
 Then, from home directory, run
 
 ```bash
@@ -16,5 +16,5 @@ Once dependancies are installed you can run
 expo start
 ```
 
-Scan the QR Code to run the app on Expo Go on your phone \n
-or type 'w' to run in-browser
+Scan the QR Code to run the app on Expo Go on your phone. 
+Or, type 'w' to run in-browser
