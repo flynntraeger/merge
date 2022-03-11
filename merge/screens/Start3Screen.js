@@ -30,7 +30,7 @@ export default function Start3Screen({ route, navigation }) {
             <View style={styles.bottomBar}>
                 <BackButton backText="Back" screenToNavigateTo="Start2 Screen" />
                 <Text>                             </Text>
-                <NextButton nextText="Finish" screenToNavigateTo="Profile Screen" />
+                <NextButton nextText="Finish" screenToNavigateTo="Profile Screen" username="CodewordPickle" showNav={params.setShowNav}/>
             </View>
         </View>
     );

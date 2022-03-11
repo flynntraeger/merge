@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Pressable} from 'react-native';
 import { ArrowRight } from "react-native-feather";
 import { useNavigation } from '@react-navigation/native';
 
-export default function NextButton({nextText, screenToNavigateTo, overlayFunc}) {
+export default function NextButton({nextText, screenToNavigateTo, username, overlayFunc, showNav}) {
     const navigation = useNavigation();
 
     function buttonFunction(screenToNavigateTo) {
@@ -11,7 +11,10 @@ export default function NextButton({nextText, screenToNavigateTo, overlayFunc}) 
             overlayFunc(true);
         }
         else {
-             navigation.navigate(screenToNavigateTo);
+             if (showNav) {
+                  showNav(true);
+             }
+             navigation.navigate(screenToNavigateTo, {username: username});
         }
     }
 
